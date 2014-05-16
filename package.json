@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/sporto/js-prototypes",
   "dependencies": {
-    "workshopper": "~1.0.0-alpha07"
+    "workshopper": "~1.0.0-alpha07",
+    "colors-tmpl": "~0.1.0",
+    "workshopper-exercise": "~0.2.3"
   }
 }

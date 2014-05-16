@@ -1,12 +1,28 @@
 #!/usr/bin/env node
 
-"use strict"
+const workshopper = require('workshopper'), 
+	path        = require('path'),
+	credits     = require('./credits'),
+	menu        = require('./exercises/menu'),
+	name        = 'learnyounode',
+	title       = 'LEARN YOU THE NODE.JS FOR MUCH WIN!',
+	subtitle    = '\x1b[23mSelect an exercise and hit \x1b[3mEnter\x1b[23m to begin'
 
-var Workshopper = require('workshopper')
-var path = require('path')
 
-Workshopper({
-	name   : 'js-prototypes',
-	title  : 'A guide to JS prototypes',
-	appDir : path.join(__dirname)
-}).init();
+function fpath (f) {
+  return path.join(__dirname, f)
+}
+
+
+workshopper({
+    name        : name
+  , title       : title
+  , subtitle    : subtitle
+  , exerciseDir : fpath('./exercises/')
+  , appDir      : __dirname
+  , helpFile    : fpath('help.txt')
+  , menuItems   : [ {
+        name    : 'credits'
+      , handler : credits
+    } ]
+})

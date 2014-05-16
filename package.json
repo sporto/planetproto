@@ -1,0 +1,31 @@
+{
+  "name": "js-prototypes",
+  "version": "0.0.1",
+  "description": "A Workshop for understanding JavaScript prototypes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sporto/js-prototypes.git"
+  },
+  "keywords": [
+    "workshop",
+    "workshopper",
+    "guide",
+    "prototypes",
+    "inheritance",
+    "tutorial",
+    "lesson"
+  ],
+  "author": "Sebastian Porto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sporto/js-prototypes/issues"
+  },
+  "homepage": "https://github.com/sporto/js-prototypes",
+  "dependencies": {
+    "workshopper": "~1.0.0-alpha07"
+  }
+}

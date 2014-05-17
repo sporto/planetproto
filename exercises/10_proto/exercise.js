@@ -37,7 +37,6 @@ exercise.addVerifyProcessor(function (verifyCallback) {
 
 	});
 
-
 })
 
 module.exports = exercise;

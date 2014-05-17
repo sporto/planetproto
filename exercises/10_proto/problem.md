@@ -41,6 +41,7 @@ You can check that one object is the prototype of another by doing:
 ```
 
 Challenge
-==========
+----------
 
-Build a program with two objects, 'animal' and 'cat' make animal the prototype of cat. Animal should define a property 'legs' set to null.
+Build a program with two objects, 'animal' and 'cat' make animal the prototype of cat.
+Animal should define a property 'legs' set to null.

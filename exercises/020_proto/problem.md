@@ -49,10 +49,10 @@ Build a program that:
 - Creates three objects: 'machine', 'robot' and 'robby'.
 - Makes machine the prototype of robot.
 - Makes robot the prototype of robby.
-- Adds a property 'legs' to machine with value of 4
-- Adds a property 'cute' to robot with value true
-- Asserts the result of robby.legs (using the compare function provided)
-- Asserts the result of robby.cute
+- Adds a property 'motors' to machine with value of 4
+- Adds a property 'friendly' to robot with value true
+- Asserts the result of robby.motors (using the compare function provided)
+- Asserts the result of robby.friendly
 
 Boilerplate
 -----------
@@ -63,7 +63,7 @@ var compare = require('./lib/compare');
 
 module.exports = {
 	machine: machine,
-	robot:    robot,
-	robby:  robby
+	robot:   robot,
+	robby:   robby
 }
 ```

@@ -1,7 +1,7 @@
 var compare = require('../../../lib/compare');
 
 var machine = {
-	legs: null
+	motors: null
 };
 
 var vehicle = {};
@@ -11,18 +11,18 @@ var robot = {};
 vehicle.__proto__ = machine;
 robot.__proto__ = machine;
 
-compare(machine.legs, null);
-compare(robot.legs, null);
-compare(vehicle.legs, null);
+compare(machine.motors, null);
+compare(robot.motors, null);
+compare(vehicle.motors, null);
 
-robot.legs = 4;
+robot.motors = 4;
 
-compare(machine.legs, null);
-compare(robot.legs, 4);
-compare(vehicle.legs, null);
+compare(machine.motors, null);
+compare(robot.motors, 4);
+compare(vehicle.motors, null);
 
 module.exports = {
 	machine: machine,
-	vehicle:    vehicle,
-	robot:    robot
+	vehicle: vehicle,
+	robot:   robot
 }

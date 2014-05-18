@@ -28,11 +28,11 @@ Challenge
 - Define three objects: 'machine' 'vehicle' and 'robot'
 - Make machine the prototype of vehicle
 - Make machine the prototype of robot
-- Assert the result of vehicle.legs (using the compare function)
-- Assert the result of robot.legs
-- After that, define a 'legs' property on machine, set this to 4
-- Assert the result of vehicle.legs again
-- Assert the result of robot.legs again
+- Assert the result of vehicle.motors (using the compare function)
+- Assert the result of robot.motors
+- After that, define a 'motors' property on machine, set this to 4
+- Assert the result of vehicle.motors again
+- Assert the result of robot.motors again
 
 Boilerplate
 -----------

@@ -7,8 +7,8 @@ function verify(exercise, userMod, verifyCallback){
 		return verifyCallback(msg, false);
 	}
 
-	var machine = userMod.machine;
-	var robot    = userMod.robot;
+	var machine    = userMod.machine;
+	var robot      = userMod.robot;
 	var vehicle    = userMod.vehicle;
 
 	if (!machine) {
@@ -31,12 +31,12 @@ function verify(exercise, userMod, verifyCallback){
 		return fail('machine must be the prototype of vehicle');
 	}
 
-	if (vehicle.hasOwnProperty('legs')) {
-		return fail('vehicle must not define legs directly');
+	if (vehicle.hasOwnProperty('motors')) {
+		return fail('vehicle must not define motors directly');
 	}
 
-	if (robot.hasOwnProperty('legs')) {
-		return fail('robot must not define legs directly');
+	if (robot.hasOwnProperty('motors')) {
+		return fail('robot must not define motors directly');
 	}
 
 

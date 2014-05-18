@@ -4,22 +4,20 @@ Property Assignments
 What happens if you update a property that already exists in the prototype? Let's see:
 
 ```js
+var alien = {
+	kind: 'alien'
+}
 
-	var alien = {
-		kind: 'alien'
-	}
+var zippy = {}
+zippy.__proto__ = alien
 
-	var zippy = {}
-	zippy.__proto__ = alien
+zippy.kind = 'zippy'
 
-	zippy.kind = 'zippy'
+console.log(zippy.kind); //=> 'zippy'
+// zippy now has a 'kind' property
 
-	console.log(zippy.kind); //=> 'zippy'
-	// zippy now has a 'kind' property
-
-	console.log(alien.kind); //=> 'alien'
-	// alien has not being modified
-
+console.log(alien.kind); //=> 'alien'
+// alien has not being modified
 ```
 
 New / updated properties are assigned to the object, not to the prototype
@@ -29,11 +27,11 @@ Challenge
 ---------
 
 - Define three objects: 'machine', 'robot' and 'vehicle'
-- In the definition of machine add a property 'legs' set to null.
+- In the definition of machine add a property 'motors' set to null.
 - Make machine the prototype of robot and vehicle
-- Assert machines.legs, robot.legs and vehicle.legs (in that order)
-- Set robot.legs to 4 by direct assignment
-- Assert again machines.legs, robot.legs and vehicle.legs (in that order)
+- Assert machines.motors, robot.motors and vehicle.motors (in that order)
+- Set robot.motors to 4 by direct assignment
+- Assert again machines.motors, robot.motors and vehicle.motors (in that order)
 
 Boilerplate
 -----------
@@ -43,8 +41,8 @@ var compare = require('./lib/compare');
 ... you code here ...
 
 module.exports = {
-	machine: machine,
-	vehicle:    vehicle,
+	machine:  machine,
+	vehicle:  vehicle,
 	robot:    robot
 }
 ```

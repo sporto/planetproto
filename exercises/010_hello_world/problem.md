@@ -17,7 +17,7 @@ var compare = require('./lib/compare');
 Hints
 -----
 
-To make Node.js program, create a new file with a .js extension and start writing JavaScript! Execute your program by running it with the node command. e.g.:
+To make Node.js program, create a new file with a .js extension and start writing JavaScript! Exefriendly your program by running it with the node command. e.g.:
 
 $ node program.js
 You can write to the console in the same way as in the browser:

@@ -7,9 +7,9 @@ function verify(exercise, userMod, verifyCallback){
 		return verifyCallback(msg, false);
 	}
 
-	var machine = userMod.machine;
+	var machine  = userMod.machine;
 	var robot    = userMod.robot;
-	var robby  = userMod.robby;
+	var robby    = userMod.robby;
 
 	if (!machine) {
 		return fail('You must export a machine variable');
@@ -31,16 +31,16 @@ function verify(exercise, userMod, verifyCallback){
 		return fail('robot must be the prototype of robby');
 	}
 
-	if (machine.legs != 4) {
-		return fail("machine must define legs");
+	if (machine.motors != 4) {
+		return fail("machine must define motors");
 	}
 
-	if (robot.cute !== true) {
-		return fail('robot must define cute');
+	if (robot.friendly !== true) {
+		return fail('robot must define friendly');
 	}
 
-	if (!robot.hasOwnProperty('cute')) {
-		return fail('cute must be defined in the robot object');
+	if (!robot.hasOwnProperty('friendly')) {
+		return fail('friendly must be defined in the robot object');
 	}
 
 	verifyCallback(null, true)

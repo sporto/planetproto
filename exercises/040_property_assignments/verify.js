@@ -7,9 +7,9 @@ function verify(exercise, userMod, verifyCallback){
 		return verifyCallback(msg, false);
 	}
 
-	var machine = userMod.machine;
-	var robot    = userMod.robot;
-	var vehicle    = userMod.vehicle;
+	var machine   = userMod.machine;
+	var robot     = userMod.robot;
+	var vehicle   = userMod.vehicle;
 
 	if (!machine) {
 		return fail('You must export a machine variable');
@@ -31,20 +31,20 @@ function verify(exercise, userMod, verifyCallback){
 		return fail('machine must be the prototype of vehicle');
 	}
 
-	if (!machine.hasOwnProperty('legs')) {
-		return fail('machine must define a property legs');
+	if (!machine.hasOwnProperty('motors')) {
+		return fail('machine must define a property motors');
 	}
 
-	if (machine.legs !== null) {
-		return fail('machine.legs must be null');
+	if (machine.motors !== null) {
+		return fail('machine.motors must be null');
 	}
 
-	if (!robot.hasOwnProperty('legs')) {
-		return fail('robot must has a property legs');
+	if (!robot.hasOwnProperty('motors')) {
+		return fail('robot must has a property motors');
 	}
 
-	if (robot.legs !== 4) {
-		return fail('robot.legs must be 4');
+	if (robot.motors !== 4) {
+		return fail('robot.motors must be 4');
 	}
 
 

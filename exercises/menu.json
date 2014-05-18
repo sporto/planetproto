@@ -1,5 +1,6 @@
 [
 	"010 Hello World",
 	"020 Proto",
-	"030 Dynamic lookups"
+	"030 Dynamic lookups",
+	"040 Property assignments"
 ]

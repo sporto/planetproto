@@ -1,5 +1,5 @@
 Property Assignments
------------------------
+====================
 
 What happens if you update a property that already exists in the prototype? Let's see:
 
@@ -26,13 +26,12 @@ Note that the property 'kind' now exists in both person and zack.
 Challenge
 ---------
 
-Make a program that
-- Defines three objects: 'animal', 'cat' and 'dog'
-- In the definition of animal adds a property 'legs' set to null.
-- Makes animal the prototype of cat and dog
-- Asserts animals.legs, cat.legs and dog.legs (in that order)
-- Sets cat.legs to 4 by direct assignment
-- Asserts again animals.legs, cat.legs and dog.legs (in that order)
+- Define three objects: 'animal', 'cat' and 'dog'
+- In the definition of animal add a property 'legs' set to null.
+- Make animal the prototype of cat and dog
+- Assert animals.legs, cat.legs and dog.legs (in that order)
+- Set cat.legs to 4 by direct assignment
+- Assert again animals.legs, cat.legs and dog.legs (in that order)
 
 Boilerplate
 -----------

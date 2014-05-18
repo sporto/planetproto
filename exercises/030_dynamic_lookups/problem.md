@@ -1,4 +1,5 @@
-# Prototype lookups are dynamic
+Prototype lookups are dynamic
+===================
 
 You can add properties to the prototype of an object at any time, the prototype chain lookup will find the new property as expected.
 
@@ -22,21 +23,21 @@ You can add properties to the prototype of an object at any time, the prototype 
 Challenge
 ----------
 
-Write a program that:
-- Defines three objects: 'animal' 'dog' and 'cat'
-- Makes animal the prototype of dog
-- Makes animal the prototype of cat
-- Asserts the result dog.legs
-- Asserts the result cat.legs
-- After that, defines a 'legs' property on animal, set this to 4
-- Asserts the result dog.legs again
-- Asserts the result cat.legs again
+- Define three objects: 'animal' 'dog' and 'cat'
+- Make animal the prototype of dog
+- Make animal the prototype of cat
+- Assert the result of dog.legs (using the compare function)
+- Assert the result of cat.legs
+- After that, define a 'legs' property on animal, set this to 4
+- Assert the result of dog.legs again
+- Assert the result of cat.legs again
 
 Boilerplate
 -----------
 
 ```js
 var compare = require('./lib/compare');
+
 ... you code here ...
 
 module.exports = {

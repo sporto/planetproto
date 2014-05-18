@@ -9,7 +9,7 @@ function verify(exercise, userMod, verifyCallback){
 
 	var animal = userMod.animal;
 	var cat    = userMod.cat;
-	var felix  = userMod.felix;
+	var dog    = userMod.dog;
 
 	if (!animal) {
 		return fail('You must export a animal variable');
@@ -19,29 +19,26 @@ function verify(exercise, userMod, verifyCallback){
 		return fail('You must export a cat variable');
 	}
 
-	if (!felix) {
-		return fail('You must export a felix variable');
+	if (!dog) {
+		return fail('You must export a dog variable');
 	}
 
 	if (cat.__proto__ != animal) {
 		return fail('animal must be the prototype of cat');
 	}
 
-	if (felix.__proto__ != cat) {
-		return fail('cat must be the prototype of felix');
+	if (dog.__proto__ != animal) {
+		return fail('animal must be the prototype of dog');
 	}
 
-	if (animal.legs != 4) {
-		return fail("animal must define legs");
+	if (dog.hasOwnProperty('legs')) {
+		return fail('dog must not define legs directly');
 	}
 
-	if (cat.cute !== true) {
-		return fail('cat must define cute');
+	if (cat.hasOwnProperty('legs')) {
+		return fail('cat must not define legs directly');
 	}
 
-	if (!cat.hasOwnProperty('cute')) {
-		return fail('cute must be defined in the cat object');
-	}
 
 	verifyCallback(null, true)
 }

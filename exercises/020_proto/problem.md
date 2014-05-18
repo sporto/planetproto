@@ -49,7 +49,8 @@ Build a program that:
 - Makes cat the prototype of felix.
 - Adds a property 'legs' to animal with value of 4
 - Adds a property 'cute' to cat with value true
-- Compare the result of felix.legs and felix.cute
+- Asserts the result of felix.legs (using the compare function provided)
+- Asserts the result of felix.cute
 
 Boilerplate
 -----------

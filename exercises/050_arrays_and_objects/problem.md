@@ -41,7 +41,7 @@ Write a program that:
 - Asserts the result of cat.abilities
 - Asserts the result of dog.abilities
 
-- Adds a trick to cat by doing `cat.tricks.push('....')`
+- Adds a 'roll' trick to cat by doing `cat.tricks.push('roll')`
 - Adds an ability to dog by doing `dog.abilities.walk = true`
 
 - Asserts the result of cat.tricks

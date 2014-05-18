@@ -29,6 +29,7 @@
     "workshopper": "~1.0.0-alpha07",
     "colors-tmpl": "~0.1.0",
     "workshopper-exercise": "~0.2.3",
-    "workshopper-wrappedexec": "~0.1.1"
+    "workshopper-wrappedexec": "~0.1.1",
+    "underscore": "~1.6.0"
   }
 }

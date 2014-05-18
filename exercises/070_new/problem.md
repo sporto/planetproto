@@ -7,13 +7,15 @@ Challenge
 ---------
 
 Write a program that:
-- Defines an object called 'animal'
-- Defines a method called new in animal
-- When animal.new is called is should return a new object with the prototype set to animal e.g.
+- Defines an object called 'machine'
+- Defines a method called new in machine
+- When machine.new is called is should return a new object with the prototype set to machine e.g.
 
 ```js
-	var cat = animal.new();
-	// animal should be the prototype of cat
+
+	var robot = machine.new();
+	// machine should be the prototype of robot
+
 ```
 
 Boilerplate
@@ -22,6 +24,6 @@ Boilerplate
 ... you code here ...
 
 module.exports = {
-	animal:  animal
+	machine:  machine
 }
 ```

@@ -5,13 +5,9 @@ Understanding JavaScript Prototypes - Workshop
 
 ## Mission
 
-When I first started learning about JavaScript object model my reaction was of horror and disbelief. I was totally puzzled by its prototype nature as it was my first encounter with a prototype based language. I didn't help that JavaScript has a unique take on prototypes as it adds the concept of __function constructors__. I bet that many of you have had similar experience.
-
-But as I used JavaScript more I didn't just learn to understand its object model but also started love parts of it. Thanks to JavaScript I have find out the elegance and flexibility of prototypes languages. I am now quite fond of prototype languages because they have a simpler and more flexible object model than class based languages.
-
-Most guides / tutorials start explaining JavaScript objects by going directly to ‘__constructor functions__’, I think this is a mistake, as they introduce a fairly complex concept early on making Javascript look difficult and confusing from the start. Let's leave this for later. First let's start with the basics of prototypes.
-
 The goal of this workshop is to help you understand the object model in Javascript by learning how prototypes work.
+
+Most guides / tutorials start explaining JavaScript objects by going directly to ‘__constructor functions__’, this workshop is different, it starts simple by explaining prototype chains and building from there.
 
 **Please read the exercises thoroughly and obey all conditions, they are there to help you learn!**
 

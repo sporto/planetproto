@@ -5,13 +5,15 @@ __Constructor functions__ are the most used way in JavaScript to construct proto
 In JavaScript you can create an object like this:
 
 ```js
-	function Foo(){
+
+	function Alien(){
 	}
 
-	var foo = new Foo();
+	var zippy = new Alien();
 
-	//foo is now an instance of Foo
-	console.log(foo instanceof Foo ) //=> true
+	//zippy is now an instance of Alien
+	console.log(zippy instanceof Alien ) //=> true
+
 ```
 
 Functions when used with the keyword __new__ behave like factories, meaning that they create new objects.
@@ -21,9 +23,9 @@ Challenge
 ----------
 
 Write a program that:
-- Defines an 'Animal' function
-- Creates an instance of Animal called 'cat'
-- Asserts the result of `(cat instanceof Animal)`
+- Defines an 'machine' function
+- Creates an instance of machine called 'robot'
+- Asserts the result of `(robot instanceof machine)`
 
 Boilerplate
 -----------
@@ -33,7 +35,7 @@ var compare = require('./lib/compare');
 ... you code here ...
 
 module.exports = {
-	Animal:  Animal,
-	cat:     cat
+	machine:  machine,
+	robot:     robot
 }
 ```

@@ -1,31 +1,31 @@
 var compare = require('../../../lib/compare');
 
-var animal = {
-	tricks: [],
-	abilities: {}
+var machine = {
+	parts: [],
+	capabilities: {}
 };
 
-var dog = {};
-var cat = {};
+var vehicle = {};
+var robot = {};
 
-cat.__proto__ = animal;
-dog.__proto__ = animal;
+robot.__proto__ = machine;
+vehicle.__proto__ = machine;
 
-compare(cat.tricks, []);
-compare(dog.tricks, []);
-compare(cat.abilities, {});
-compare(dog.abilities, {});
+compare(robot.parts, []);
+compare(vehicle.parts, []);
+compare(robot.capabilities, {});
+compare(vehicle.capabilities, {});
 
-cat.tricks.push('roll');
-dog.abilities.walk = true;
+robot.parts.push('core');
+vehicle.capabilities.fly = true;
 
-compare(cat.tricks, ['roll']);
-compare(dog.tricks, ['roll']);
-compare(cat.abilities, {walk: true});
-compare(dog.abilities, {walk: true});
+compare(robot.parts, ['core']);
+compare(vehicle.parts, ['core']);
+compare(robot.capabilities, {fly: true});
+compare(vehicle.capabilities, {fly: true});
 
 module.exports = {
-	animal: animal,
-	dog:    dog,
-	cat:    cat
+	machine:   machine,
+	vehicle:   vehicle,
+	robot:     robot
 }

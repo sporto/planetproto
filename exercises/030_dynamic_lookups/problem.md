@@ -4,33 +4,35 @@ Prototype lookups are dynamic
 You can add properties to the prototype of an object at any time, the prototype chain lookup will find the new property as expected.
 
 ```js
-	var person = {}
+
+	var alien = {}
 	
-	var zack = {}
-	zack.__proto__ = person
+	var zippy = {}
+	zippy.__proto__ = alien
 	
-	// zack doesn't respond to kind at this point
-	console.log(zack.kind); //=> undefined
+	// zippy doesn't respond to kind at this point
+	console.log(zippy.kind); //=> undefined
 	
-	// let's add kind to person
-	person.kind = 'person'
+	// let's add kind to alien
+	alien.kind = 'alien'
 	
-	// now zack responds to kind
-	// because it finds 'kind' in person
-	console.log(zack.kind); //=> 'person'
+	// now zippy responds to kind
+	// because it finds 'kind' in alien
+	console.log(zippy.kind); //=> 'alien'
+
 ```
 
 Challenge
 ----------
 
-- Define three objects: 'animal' 'dog' and 'cat'
-- Make animal the prototype of dog
-- Make animal the prototype of cat
-- Assert the result of dog.legs (using the compare function)
-- Assert the result of cat.legs
-- After that, define a 'legs' property on animal, set this to 4
-- Assert the result of dog.legs again
-- Assert the result of cat.legs again
+- Define three objects: 'machine' 'vehicle' and 'robot'
+- Make machine the prototype of vehicle
+- Make machine the prototype of robot
+- Assert the result of vehicle.legs (using the compare function)
+- Assert the result of robot.legs
+- After that, define a 'legs' property on machine, set this to 4
+- Assert the result of vehicle.legs again
+- Assert the result of robot.legs again
 
 Boilerplate
 -----------
@@ -41,8 +43,8 @@ var compare = require('./lib/compare');
 ... you code here ...
 
 module.exports = {
-	animal: animal,
-	dog:    dog,
-	cat:    cat
+	machine: machine,
+	vehicle:    vehicle,
+	robot:    robot
 }
 ```

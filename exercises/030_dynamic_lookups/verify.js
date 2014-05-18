@@ -7,36 +7,36 @@ function verify(exercise, userMod, verifyCallback){
 		return verifyCallback(msg, false);
 	}
 
-	var animal = userMod.animal;
-	var cat    = userMod.cat;
-	var dog    = userMod.dog;
+	var machine = userMod.machine;
+	var robot    = userMod.robot;
+	var vehicle    = userMod.vehicle;
 
-	if (!animal) {
-		return fail('You must export a animal variable');
+	if (!machine) {
+		return fail('You must export a machine variable');
 	}
 
-	if (!cat) {
-		return fail('You must export a cat variable');
+	if (!robot) {
+		return fail('You must export a robot variable');
 	}
 
-	if (!dog) {
-		return fail('You must export a dog variable');
+	if (!vehicle) {
+		return fail('You must export a vehicle variable');
 	}
 
-	if (cat.__proto__ != animal) {
-		return fail('animal must be the prototype of cat');
+	if (robot.__proto__ != machine) {
+		return fail('machine must be the prototype of robot');
 	}
 
-	if (dog.__proto__ != animal) {
-		return fail('animal must be the prototype of dog');
+	if (vehicle.__proto__ != machine) {
+		return fail('machine must be the prototype of vehicle');
 	}
 
-	if (dog.hasOwnProperty('legs')) {
-		return fail('dog must not define legs directly');
+	if (vehicle.hasOwnProperty('legs')) {
+		return fail('vehicle must not define legs directly');
 	}
 
-	if (cat.hasOwnProperty('legs')) {
-		return fail('cat must not define legs directly');
+	if (robot.hasOwnProperty('legs')) {
+		return fail('robot must not define legs directly');
 	}
 
 

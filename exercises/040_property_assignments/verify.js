@@ -7,44 +7,44 @@ function verify(exercise, userMod, verifyCallback){
 		return verifyCallback(msg, false);
 	}
 
-	var animal = userMod.animal;
-	var cat    = userMod.cat;
-	var dog    = userMod.dog;
+	var machine = userMod.machine;
+	var robot    = userMod.robot;
+	var vehicle    = userMod.vehicle;
 
-	if (!animal) {
-		return fail('You must export a animal variable');
+	if (!machine) {
+		return fail('You must export a machine variable');
 	}
 
-	if (!cat) {
-		return fail('You must export a cat variable');
+	if (!robot) {
+		return fail('You must export a robot variable');
 	}
 
-	if (!dog) {
-		return fail('You must export a dog variable');
+	if (!vehicle) {
+		return fail('You must export a vehicle variable');
 	}
 
-	if (cat.__proto__ != animal) {
-		return fail('animal must be the prototype of cat');
+	if (robot.__proto__ != machine) {
+		return fail('machine must be the prototype of robot');
 	}
 
-	if (dog.__proto__ != animal) {
-		return fail('animal must be the prototype of dog');
+	if (vehicle.__proto__ != machine) {
+		return fail('machine must be the prototype of vehicle');
 	}
 
-	if (!animal.hasOwnProperty('legs')) {
-		return fail('animal must define a property legs');
+	if (!machine.hasOwnProperty('legs')) {
+		return fail('machine must define a property legs');
 	}
 
-	if (animal.legs !== null) {
-		return fail('animal.legs must be null');
+	if (machine.legs !== null) {
+		return fail('machine.legs must be null');
 	}
 
-	if (!cat.hasOwnProperty('legs')) {
-		return fail('cat must has a property legs');
+	if (!robot.hasOwnProperty('legs')) {
+		return fail('robot must has a property legs');
 	}
 
-	if (cat.legs !== 4) {
-		return fail('cat.legs must be 4');
+	if (robot.legs !== 4) {
+		return fail('robot.legs must be 4');
 	}
 
 

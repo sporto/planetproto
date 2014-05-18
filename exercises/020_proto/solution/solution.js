@@ -1,24 +1,24 @@
 var compare = require('../../../lib/compare');
 
-var animal = {
+var machine = {
 	legs: 4
 };
 
-var cat = {
+var robot = {
 	cute: true
 };
 
-var felix = {};
+var robby = {};
 
-cat.__proto__ = animal;
+robot.__proto__ = machine;
 
-felix.__proto__ = cat;
+robby.__proto__ = robot;
 
-compare(felix.legs, 4);
-compare(felix.cute, true);
+compare(robby.legs, 4);
+compare(robby.cute, true);
 
 module.exports = {
-	animal: animal,
-	cat:    cat,
-	felix:  felix
+	machine: machine,
+	robot:    robot,
+	robby:  robby
 }

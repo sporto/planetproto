@@ -6,22 +6,24 @@ Arrays and objects may not behave as you expect them.
 Let's see what happens when you modify an array:
 
 ```js
-	var person = {
-		hobbies: ['swimming']
+
+	var alien = {
+		skills: ['morhp']
 	}
 
-	var zack = {}
-	zack.__proto__ = person
+	var zorg = {}
+	zorg.__proto__ = alien
 
-	zack.hobbies.push('programming')
+	zorg.skills.push('clone')
 
-	console.log(zack.hobbies);
-	//=> swimming, programming
+	console.log(zorg.skills);
+	//=> morhp, clone
 	// we expected this
 
-	console.log(person.hobbies); 
-	//=> swimming, programming
+	console.log(alien.skills);
+	//=> morhp, clone
 	// maybe we didn't expect this, we have modified the array in the prototype object.
+
 ```
 
 When you change and array or an object you make the change directly on the object.
@@ -31,23 +33,24 @@ Challenge
 
 Write a program that:
 
-- Creates three objects: 'animal', 'cat' and 'dog'
-- In the definition of animal sets an property 'tricks', set it to an empty array `[]`
-- In the definition of animal sets a property 'abilities', set it to an empty object `{}`
-- Sets the prototype of both cat and dog to animal
+- Creates three objects: 'machine', 'robot' and 'vehicle'
+- In the definition of machine sets an property 'parts', set it to an empty array `[]`
+- In the definition of machine sets a property 'capabilities', set it to an empty object `{}`
+- Sets the prototype of both robot and vehicle to machine
+- Sets the prototype of both robot and vehicle to machine
 
-- Asserts the result of cat.tricks
-- Asserts the result of dog.tricks
-- Asserts the result of cat.abilities
-- Asserts the result of dog.abilities
+- Asserts the result of robot.parts
+- Asserts the result of vehicle.parts
+- Asserts the result of robot.capabilities
+- Asserts the result of vehicle.capabilities
 
-- Adds a 'roll' trick to cat by doing `cat.tricks.push('roll')`
-- Adds an ability to dog by doing `dog.abilities.walk = true`
+- Adds a 'core' trick to robot by doing `robot.parts.push('core')`
+- Adds an ability to vehicle by doing `vehicle.capabilities.fly = true`
 
-- Asserts the result of cat.tricks
-- Asserts the result of dog.tricks
-- Asserts the result of cat.abilities
-- Asserts the result of dog.abilities
+- Asserts the result of robot.parts
+- Asserts the result of vehicle.parts
+- Asserts the result of robot.capabilities
+- Asserts the result of vehicle.capabilities
 
 Boilerplate
 -----------
@@ -57,8 +60,8 @@ var compare = require('./lib/compare');
 ... you code here ...
 
 module.exports = {
-	animal: animal,
-	dog:    dog,
-	cat:    cat
+	machine: machine,
+	vehicle:    vehicle,
+	robot:    robot
 }
 ```

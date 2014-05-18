@@ -4,40 +4,48 @@ The 'function prototype'
 Every function in JavaScript has a special property called ‘__prototype__’.
 
 ```js
-	function Foo(){
+
+	function Alien(){
 	}
 
-	Foo.prototype
+	Alien.prototype
+
 ```
 
 As confusing as it may sound, this ‘__prototype__’ property is not the real prototype (__\_\_proto\_\___) of the function. 
 
 ```js
-	Foo.__proto__ === Foo.prototype //=> false
+
+	Alien.__proto__ === Alien.prototype //=> false
+
 ```
 
 This of course generates a lot of confusion as people use the term '__prototype__' to refer to different things. 
-A good clarification is to always refer to the special '__prototype__' property of functions as '__the function prototype__', never just '__prototype__'.
+A good clarifirobotion is to always refer to the special '__prototype__' property of functions as '__the function prototype__', never just '__prototype__'.
 
-This ‘__prototype__’ property points to the object that will be asigned as the prototype of instances created with that function when using '__new__'. Confusing? This is easier to explain with an example:
+**This ‘__prototype__’ property points to the object that will be asigned as the prototype of instances created with that function when using '__new__'.**
+
+Confusing? This is easier to explain with an example:
 
 ```js
-	function Person(name) {
+
+	function Alien(name) {
 		this.name = name;
 	}
 
-	// the function person has a prototype property
+	// the function Alien has a prototype property
 	// we can add properties to this function prototype
-	Person.prototype.kind = ‘person’
+	Alien.prototype.kind = 'alien'
 
 	// when we create a new object using new
-	var zack = new Person(‘Zack’);
+	var zippy = new Alien('Zippy');
 	
-	// the prototype of the new object points to person.prototype
-	zack.__proto__ == Person.prototype //=> true
+	// the prototype of the new object points to alien.prototype
+	zippy.__proto__ == Alien.prototype //=> true
 
-	// in the new object we have access to properties defined in Person.prototype
-	zack.kind //=> person
+	// in the new object we have access to properties defined in Alien.prototype
+	zippy.kind //=> alien
+
 ```
 
 That is mostly everything there is to know about the JavaScript object model. Understanding how __\_\_proto\_\___ and __function.prototype__ are related will give you countless hours of joy and satisfaction, or maybe not.
@@ -46,34 +54,36 @@ Challenge
 ---------
 
 Write a program that:
-- Defines an 'Animal' function constructor
-- Creates two instances of Animal: 'cat' and 'dog'
-- Both cat and dog should respond to 'tricks' and 'abilities', these should be empty arrays at first
+- Defines an 'machine' function constructor
+- Creates two instances of machine: 'robot' and 'vehicle'
+- Both robot and vehicle should respond to 'parts' and 'capabilities', these should be empty arrays at first
 
-- Assert the result of cat.tricks
-- Assert the result of dog.tricks
-- Assert the result of cat.abilities
-- Assert the result of dog.abilities
+- Assert the result of robot.parts
+- Assert the result of vehicle.parts
+- Assert the result of robot.capabilities
+- Assert the result of vehicle.capabilities
 
-- Add 'roll' to cat.tricks, dogs.tricks should still be empty
-- Add 'walk' to cat.abilities, dogs.abilities should also have 'walk' without adding to it directly
+- Add 'core' to robot.parts, vehicles.parts should still be empty
+- Add 'fly' to robot.capabilities, after doing that vehicles.capabilities should also have 'fly' without adding to it directly
 
-- Assert the result of cat.tricks
-- Assert the result of dog.tricks
-- Assert the result of cat.abilities
-- Assert the result of dog.abilities
+- Assert the result of robot.parts
+- Assert the result of vehicle.parts
+- Assert the result of robot.capabilities
+- Assert the result of vehicle.capabilities
 
 Boilerplate
 -----------
 ```js
-var compare = require('./lib/compare');
-... you code here ...
 
-module.exports = {
-	Animal: Animal,
-	cat:    cat,
-	dog:    dog
-}
+	var compare = require('./lib/compare');
+	... you code here ...
+
+	module.exports = {
+		machine:  machine,
+		robot:    robot,
+		vehicle:  vehicle
+	}
+
 ```
 
 

@@ -8,76 +8,76 @@ function verify(exercise, userMod, verifyCallback){
 		return verifyCallback(msg, false);
 	}
 
-	var animal = userMod.animal;
-	var cat    = userMod.cat;
-	var dog    = userMod.dog;
+	var machine = userMod.machine;
+	var robot   = userMod.robot;
+	var vehicle     = userMod.vehicle;
 
-	if (!animal) {
-		return fail('You must export a animal variable');
+	if (!machine) {
+		return fail('You must export a machine variable');
 	}
 
-	if (!cat) {
-		return fail('You must export a cat variable');
+	if (!robot) {
+		return fail('You must export a robot variable');
 	}
 
-	if (!dog) {
-		return fail('You must export a dog variable');
+	if (!vehicle) {
+		return fail('You must export a vehicle variable');
 	}
 
-	if (cat.__proto__ != animal) {
-		return fail('animal must be the prototype of cat');
+	if (robot.__proto__ != machine) {
+		return fail('machine must be the prototype of robot');
 	}
 
-	if (dog.__proto__ != animal) {
-		return fail('animal must be the prototype of dog');
+	if (vehicle.__proto__ != machine) {
+		return fail('machine must be the prototype of vehicle');
 	}
 
-	if (!animal.hasOwnProperty('tricks')) {
-		return fail('animal must have a tricks property');
+	if (!machine.hasOwnProperty('parts')) {
+		return fail('machine must have a parts property');
 	}
 
-	if (!animal.hasOwnProperty('abilities')) {
-		return fail('animal must have a abilities property');
+	if (!machine.hasOwnProperty('capabilities')) {
+		return fail('machine must have a capabilities property');
 	}
 
-	if (!_.isArray(animal.tricks)) {
-		return fail('animal.tricks must be an array');
+	if (!_.isArray(machine.parts)) {
+		return fail('machine.parts must be an array');
 	}
 
-	if (!_.isObject(animal.abilities)) {
-		return fail('animal.tricks must be an object');
+	if (!_.isObject(machine.capabilities)) {
+		return fail('machine.parts must be an object');
 	}
 
-	if (cat.hasOwnProperty('tricks')) {
-		return fail('cat must not own tricks directly');
+	if (robot.hasOwnProperty('parts')) {
+		return fail('robot must not own parts directly');
 	}
 
-	if (dog.hasOwnProperty('tricks')) {
-		return fail('dog must not own tricks directly');
+	if (vehicle.hasOwnProperty('parts')) {
+		return fail('vehicle must not own parts directly');
 	}
 
-	if (cat.hasOwnProperty('abilities')) {
-		return fail('cat must not own abilities directly');
+	if (robot.hasOwnProperty('capabilities')) {
+		return fail('robot must not own capabilities directly');
 	}
 
-	if (dog.hasOwnProperty('abilities')) {
-		return fail('dog must not own abilities directly');
+	if (vehicle.hasOwnProperty('capabilities')) {
+		return fail('vehicle must not own capabilities directly');
 	}
 
-	if (animal.tricks.length !== 1) {
-		return fail('tricks should have exactly one item');
+	if (machine.parts.length !== 1) {
+		return fail('parts should have exactly one item');
 	}
 
-	if (animal.tricks[0] != 'roll') {
-		return fail('expected to find roll in tricks');
+	if (machine.parts[0] != 'core') {
+		return fail('expected to find core in parts');
 	}
 
-	if (!animal.abilities.hasOwnProperty('walk')) {
-		return fail('abilities should have a walk property');
+	if (!machine.capabilities.hasOwnProperty('fly')) {
+		return fail('capabilities should have a fly property');
 	}
 
-	if (animal.abilities.walk !== true) {
-		return fail('abilities.walk should be true');
+	if (machine.capabilities.fly !== true) {
+		return fail('capabilities.fly should be true');
 	}
 
 	verifyCallback(null, true)

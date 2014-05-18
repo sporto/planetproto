@@ -4,34 +4,36 @@ Property Assignments
 What happens if you update a property that already exists in the prototype? Let's see:
 
 ```js
-	var person = {
-		kind: 'person'
+
+	var alien = {
+		kind: 'alien'
 	}
 
-	var zack = {}
-	zack.__proto__ = person
+	var zippy = {}
+	zippy.__proto__ = alien
 
-	zack.kind = 'zack'
+	zippy.kind = 'zippy'
 
-	console.log(zack.kind); //=> 'zack'
-	// zack now has a 'kind' property
+	console.log(zippy.kind); //=> 'zippy'
+	// zippy now has a 'kind' property
 
-	console.log(person.kind); //=> 'person'
-	// person has not being modified
+	console.log(alien.kind); //=> 'alien'
+	// alien has not being modified
+
 ```
 
 New / updated properties are assigned to the object, not to the prototype
-Note that the property 'kind' now exists in both person and zack.
+Note that the property 'kind' now exists in both alien and zippy.
 
 Challenge
 ---------
 
-- Define three objects: 'animal', 'cat' and 'dog'
-- In the definition of animal add a property 'legs' set to null.
-- Make animal the prototype of cat and dog
-- Assert animals.legs, cat.legs and dog.legs (in that order)
-- Set cat.legs to 4 by direct assignment
-- Assert again animals.legs, cat.legs and dog.legs (in that order)
+- Define three objects: 'machine', 'robot' and 'vehicle'
+- In the definition of machine add a property 'legs' set to null.
+- Make machine the prototype of robot and vehicle
+- Assert machines.legs, robot.legs and vehicle.legs (in that order)
+- Set robot.legs to 4 by direct assignment
+- Assert again machines.legs, robot.legs and vehicle.legs (in that order)
 
 Boilerplate
 -----------
@@ -41,8 +43,8 @@ var compare = require('./lib/compare');
 ... you code here ...
 
 module.exports = {
-	animal: animal,
-	dog:    dog,
-	cat:    cat
+	machine: machine,
+	vehicle:    vehicle,
+	robot:    robot
 }
 ```

@@ -6,37 +6,41 @@ When we use '__new__' with a function, JavaScript injects an implicit reference 
 When we do this:
 
 ```js
-	function Foo() {
-		this.kind = ‘foo’
+
+	function Alien() {
+		this.kind = 'alien'
 	}
 	
-	var foo = new Foo();	
-	foo.kind //=> ‘foo’
+	var zippy = new Alien();
+	zippy.kind //=> 'alien'
+
 ```
 
 Behind the scenes it is like doing something like:
 
 ```js
-	function Foo() {
+
+	function Alien() {
 		var this = {}; // this is not valid, just for illustration
-		this.__proto__ = Foo.prototype;
+		this.__proto__ = Alien.prototype;
 		
-		this.kind = ‘foo’
+		this.kind = 'alien'
 		
 		return this;
 	}
+
 ```
 
 But keep in mind that the implicit '__this__' is only assigned to a new object when using '__new__'. If you forget '__new__' keyword then '__this__' will be the global object. Of course forgetting __new__ is a cause of multiple bugs, so don't forget __new__. 
 
-One popular convention is to capitalize the first letter of a function when it is intented to be used as a function constructor e.g. 'Foo', so you now straightaway to you are missing the __new__ keyword.
+One popular convention is to capitalize the first letter of a function when it is intented to be used as a function constructor e.g. 'Alien', so you now straightaway to you are missing the __new__ keyword.
 
 Challenge
 ---------
 
 Write a program that:
-- Defines two constructor functions: 'Animal' and 'Plant'
-- When called with 'new', the Animal constructor function should return the implicit 'this'
+- Defines two constructor functions: 'machine' and 'Plant'
+- When called with 'new', the machine constructor function should return the implicit 'this'
 - When called with 'new', the Plant constructor function should return an object of your own making, not the implicit 'this'.
 
 Boilerplate
@@ -45,7 +49,7 @@ Boilerplate
 ... you code here ...
 
 module.exports = {
-	Animal:  Animal,
+	machine:  machine,
 	Plant:   Plant
 }
 ```

@@ -7,40 +7,40 @@ function verify(exercise, userMod, verifyCallback){
 		return verifyCallback(msg, false);
 	}
 
-	var animal = userMod.animal;
-	var cat    = userMod.cat;
-	var felix  = userMod.felix;
+	var machine = userMod.machine;
+	var robot    = userMod.robot;
+	var robby  = userMod.robby;
 
-	if (!animal) {
-		return fail('You must export a animal variable');
+	if (!machine) {
+		return fail('You must export a machine variable');
 	}
 
-	if (!cat) {
-		return fail('You must export a cat variable');
+	if (!robot) {
+		return fail('You must export a robot variable');
 	}
 
-	if (!felix) {
-		return fail('You must export a felix variable');
+	if (!robby) {
+		return fail('You must export a robby variable');
 	}
 
-	if (cat.__proto__ != animal) {
-		return fail('animal must be the prototype of cat');
+	if (robot.__proto__ != machine) {
+		return fail('machine must be the prototype of robot');
 	}
 
-	if (felix.__proto__ != cat) {
-		return fail('cat must be the prototype of felix');
+	if (robby.__proto__ != robot) {
+		return fail('robot must be the prototype of robby');
 	}
 
-	if (animal.legs != 4) {
-		return fail("animal must define legs");
+	if (machine.legs != 4) {
+		return fail("machine must define legs");
 	}
 
-	if (cat.cute !== true) {
-		return fail('cat must define cute');
+	if (robot.cute !== true) {
+		return fail('robot must define cute');
 	}
 
-	if (!cat.hasOwnProperty('cute')) {
-		return fail('cute must be defined in the cat object');
+	if (!robot.hasOwnProperty('cute')) {
+		return fail('cute must be defined in the robot object');
 	}
 
 	verifyCallback(null, true)

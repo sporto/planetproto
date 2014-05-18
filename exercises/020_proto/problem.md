@@ -49,13 +49,13 @@ Build a program that:
 - Makes cat the prototype of felix.
 - Adds a property 'legs' to animal with value of 4
 - Adds a property 'cute' to cat with value true
-- Asserts the result of felix.legs and felix.cute
+- Compare the result of felix.legs and felix.cute
 
 Boilerplate
 -----------
 
 ```js
-var assert = require('assert');
+var compare = require('./lib/compare');
 ... you code here ...
 
 module.exports = {

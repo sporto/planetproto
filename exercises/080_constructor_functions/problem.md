@@ -28,7 +28,7 @@ Write a program that:
 Boilerplate
 -----------
 ```js
-var assert = require('assert');
+var compare = require('./lib/compare');
 
 ... you code here ...
 

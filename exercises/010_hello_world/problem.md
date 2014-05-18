@@ -8,7 +8,7 @@ Boilerplate
 -----------
 
 ```js
-var assert = require('assert');
+var compare = require('./lib/compare');
 
 ... your code goes here ...
 

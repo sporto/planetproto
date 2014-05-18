@@ -53,9 +53,8 @@ That is mostly everything there is to know about the JavaScript object model. Un
 Challenge
 ---------
 
-Write a program that:
-- Defines an 'machine' function constructor
-- Creates two instances of machine: 'robot' and 'vehicle'
+- Define an 'Machine' function constructor
+- Create two instances of Machine: 'robot' and 'vehicle'
 - Both robot and vehicle should respond to 'parts' and 'capabilities', these should be empty arrays at first
 
 - Assert the result of robot.parts
@@ -79,7 +78,7 @@ Boilerplate
 	... you code here ...
 
 	module.exports = {
-		machine:  machine,
+		Machine:  Machine,
 		robot:    robot,
 		vehicle:  vehicle
 	}

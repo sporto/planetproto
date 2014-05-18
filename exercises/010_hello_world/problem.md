@@ -1,13 +1,35 @@
-Write a program that prints the text "HELLO WORLD" to the console (stdout).
+Challenge
+--------
 
-HINTS
+Write a program that:
+- Assets the result of 1 + 1
+
+Boilerplate
+-----------
+
+```js
+var assert = require('assert');
+
+... your code goes here ...
+
+```
+
+Hints
+-----
 
 To make Node.js program, create a new file with a .js extension and start writing JavaScript! Execute your program by running it with the node command. e.g.:
 
 $ node program.js
 You can write to the console in the same way as in the browser:
 
-console.log("text")
+console.log("text");
+
+To make an assertion write `assert(actual, expected)`, e.g.:
+
+```js
+assert(1 === 1, true);
+```
+
 When you are done, you must run:
 
 $ {appname} verify program.js

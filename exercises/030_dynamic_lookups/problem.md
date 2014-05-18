@@ -22,8 +22,26 @@ You can add properties to the prototype of an object at any time, the prototype 
 Challenge
 ----------
 
-In a program:
-- Define two objects: 'animal' and 'cat'. 
-- Make animal the prototype of cat.
-- After that, define an 'alive' property on animal, set this to true. 
-- Finally log cat.alive.
+Write a program that:
+- Defines three objects: 'animal' 'dog' and 'cat'
+- Makes animal the prototype of dog
+- Makes animal the prototype of cat
+- Asserts the result dog.legs
+- Asserts the result cat.legs
+- After that, defines a 'legs' property on animal, set this to 4
+- Asserts the result dog.legs again
+- Asserts the result cat.legs again
+
+Boilerplate
+-----------
+
+```js
+var assert = require('assert');
+... you code here ...
+
+module.exports = {
+	animal: animal,
+	dog:    dog,
+	cat:    cat
+}
+```

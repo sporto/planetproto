@@ -14,7 +14,7 @@ When we do this:
 	foo.kind //=> ‘foo’
 ```
 
-Behind the scenes it is like doing something like this:
+Behind the scenes it is like doing something like:
 
 ```js
 	function Foo() {
@@ -38,3 +38,15 @@ Write a program that:
 - Defines two constructor functions: 'Animal' and 'Plant'
 - When called with 'new', the Animal constructor function should return the implicit 'this'
 - When called with 'new', the Plant constructor function should return an object of your own making, not the implicit 'this'.
+
+Boilerplate
+-----------
+```js
+... you code here ...
+
+module.exports = {
+	Animal:  Animal,
+	Plant:   Plant
+}
+```
+

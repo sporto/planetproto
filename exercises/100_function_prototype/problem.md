@@ -48,8 +48,32 @@ Challenge
 Write a program that:
 - Defines an 'Animal' function constructor
 - Creates two instances of Animal: 'cat' and 'dog'
-- Both cat and dog should have two arrays: 'tricks' and 'abilities' they both should be empty at first
+- Both cat and dog should respond to 'tricks' and 'abilities', these should be empty arrays at first
+
+- Assert the result of cat.tricks
+- Assert the result of dog.tricks
+- Assert the result of cat.abilities
+- Assert the result of dog.abilities
+
 - Add 'roll' to cat.tricks, dogs.tricks should still be empty
 - Add 'walk' to cat.abilities, dogs.abilities should also have 'walk' without adding to it directly
+
+- Assert the result of cat.tricks
+- Assert the result of dog.tricks
+- Assert the result of cat.abilities
+- Assert the result of dog.abilities
+
+Boilerplate
+-----------
+```js
+var assert = require('assert');
+... you code here ...
+
+module.exports = {
+	Animal: Animal,
+	cat:    cat,
+	dog:    dog
+}
+```
 
 

@@ -43,5 +43,24 @@ You can check that one object is the prototype of another by doing:
 Challenge
 ----------
 
-Build a program with two objects, 'animal' and 'cat' make animal the prototype of cat.
-Animal should define a property 'legs' set to null.
+Build a program that:
+- Creates three objects: 'animal', 'cat' and 'felix'.
+- Makes animal the prototype of cat.
+- Makes cat the prototype of felix.
+- Adds a property 'legs' to animal with value of 4
+- Adds a property 'cute' to cat with value true
+- Asserts the result of felix.legs and felix.cute
+
+Boilerplate
+-----------
+
+```js
+var assert = require('assert');
+... you code here ...
+
+module.exports = {
+	animal: animal,
+	cat:    cat,
+	felix:  felix
+}
+```

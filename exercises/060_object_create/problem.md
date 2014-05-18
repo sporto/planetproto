@@ -37,7 +37,24 @@ There is no such thing as Object.setPrototype.
 Challenge
 ---------
 
-In a program:
-- Create an object called 'animal' with a 'legs' property set to null
-- Create another object called 'cat' with 'animal' set as the prototype, by using Object.create
-- Log cat.legs
+Write a program that:
+- Creates an object called 'animal' with a 'legs' property set to null
+- Uses Object.create to create another object called 'cat' with 'animal' set as the prototype
+- Uses Object.create to create another object called 'felix' with 'cat' as the prototype
+- Asserts the result of `animal.isPrototypeOf(felix)`
+- Asserts the results of `Object.getPrototypeOf(felix)`
+
+Boilerplate
+-----------
+```js
+var assert = require('assert');
+
+... you code here ...
+
+module.exports = {
+	animal:  animal,
+	cat:     cat,
+	felix:   felix
+}
+```
+

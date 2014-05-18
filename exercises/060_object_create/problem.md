@@ -40,8 +40,8 @@ Challenge
 - Create an object called 'machine'
 - Use Object.create to create another object called 'robot' with 'machine' set as the prototype
 - Use Object.create to create another object called 'robby' with 'robot' as the prototype
-- Assert the result of `machine.isPrototypeOf(robby)`
-- Assert the results of `Object.getPrototypeOf(robby)`
+- Assert the result of `machine.isPrototypeOf(robby)` (user compare())
+- Assert the results of `Object.getPrototypeOf(robby)` (use compare.same())
 
 Boilerplate
 -----------

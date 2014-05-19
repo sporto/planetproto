@@ -34,7 +34,7 @@ Challenge
 Write a program that:
 
 - Creates three objects: 'machine', 'robot' and 'vehicle'
-- In the definition of machine sets an property 'parts', set it to an empty array `[]`
+- In the definition of machine sets a property 'parts', set it to an empty array `[]`
 - In the definition of machine sets a property 'capabilities', set it to an empty object `{}`
 - Sets the prototype of both robot and vehicle to machine
 - Sets the prototype of both robot and vehicle to machine
@@ -44,8 +44,8 @@ Write a program that:
 - Asserts the result of robot.capabilities
 - Asserts the result of vehicle.capabilities
 
-- Adds a 'core' trick to robot by doing `robot.parts.push('core')`
-- Adds an ability to vehicle by doing `vehicle.capabilities.fly = true`
+- Add a 'core' part to robot by doing `robot.parts.push('core')`
+- Add an ability to vehicle by doing `vehicle.capabilities.fly = true`
 
 - Asserts the result of robot.parts
 - Asserts the result of vehicle.parts

@@ -1,6 +1,8 @@
 Planet Proto
 =============
 
+<img src="http://cl.ly/image/2M273e1D2F0I/logo.png" alt="" />
+
 Understanding JavaScript Prototypes - Workshop
 
 ## Mission
@@ -76,3 +78,5 @@ This tutorial was built using rvagg's [workshopper](https://github.com/rvagg/wor
 ## Licence
 
 MIT
+
+Robot designed by Ricardo Moreira from the Noun Project

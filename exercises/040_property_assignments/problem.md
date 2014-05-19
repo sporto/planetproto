@@ -29,15 +29,15 @@ Challenge
 - Define three objects: 'machine', 'robot' and 'vehicle'
 - In the definition of machine add a property 'motors' set to null.
 - Make machine the prototype of robot and vehicle
-- Assert machines.motors, robot.motors and vehicle.motors (in that order)
+- Claim machines.motors, robot.motors and vehicle.motors (in that order)
 - Set robot.motors to 4 by direct assignment
-- Assert again machines.motors, robot.motors and vehicle.motors (in that order)
+- Claim again machines.motors, robot.motors and vehicle.motors (in that order)
 
 Boilerplate
 -----------
 
 ```js
-var compare = require('./lib/compare');
+var claim = require('./lib/claim');
 ... you code here ...
 
 module.exports = {

@@ -40,13 +40,13 @@ Challenge
 - Create an object called 'machine'
 - Use Object.create to create another object called 'robot' with 'machine' set as the prototype
 - Use Object.create to create another object called 'robby' with 'robot' as the prototype
-- Assert the result of `machine.isPrototypeOf(robby)` (user compare())
-- Assert the results of `Object.getPrototypeOf(robby)` (use compare.same())
+- Claim the result of `machine.isPrototypeOf(robby)` (user claim())
+- Claim the results of `Object.getPrototypeOf(robby)` (use compare.same())
 
 Boilerplate
 -----------
 ```js
-var compare = require('./lib/compare');
+var claim = require('./lib/claim');
 
 ... you code here ...
 

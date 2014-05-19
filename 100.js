@@ -1,4 +1,4 @@
-var compare = require('./lib/compare');
+var claim = require('./lib/claim');
 
 function Robot() {
 	this.parts = [];
@@ -9,18 +9,18 @@ Robot.prototype.capabilities = [];
 var robby = new Robot();
 var cranky = new Robot();
 
-compare(robby.parts, []);
-compare(cranky.parts, []);
-compare(robby.capabilities, []);
-compare(cranky.capabilities, []);
+claim(robby.parts, []);
+claim(cranky.parts, []);
+claim(robby.capabilities, []);
+claim(cranky.capabilities, []);
 
 robby.parts.push('core');
 robby.capabilities.push('fly');
 
-compare(robby.parts, ['core']);
-compare(cranky.parts, []);
-compare(robby.capabilities, ['fly']);
-compare(cranky.capabilities, ['fly']);
+claim(robby.parts, ['core']);
+claim(cranky.parts, []);
+claim(robby.capabilities, ['fly']);
+claim(cranky.capabilities, ['fly']);
 
 module.exports = {
 	Robot:  Robot,

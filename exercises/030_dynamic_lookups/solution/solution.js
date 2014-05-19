@@ -1,4 +1,4 @@
-var compare = require('../../../lib/compare');
+var claim = require('../../../lib/claim');
 
 var machine = {}
 
@@ -9,13 +9,13 @@ var robot = {}
 vehicle.__proto__ = machine;
 robot.__proto__ = machine;
 
-compare(vehicle.motors, undefined);
-compare(robot.motors, undefined);
+claim(vehicle.motors, undefined);
+claim(robot.motors, undefined);
 
 machine.motors = 4;
 
-compare(vehicle.motors, 4);
-compare(robot.motors, 4);
+claim(vehicle.motors, 4);
+claim(robot.motors, 4);
 
 module.exports = {
 	machine: machine,

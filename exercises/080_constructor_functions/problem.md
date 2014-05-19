@@ -27,13 +27,13 @@ Challenge
 - Define a 'Robot' function
 - Inside the Robot constructor assign a property 'motors' on 'this', set this to 2
 - Create an instance of Robot called 'robby'
-- Assert the result of `(robby instanceof Robot)`
-- Assert the result of robby.motors
+- Claim the result of `(robby instanceof Robot)`
+- Claim the result of robby.motors
 
 Boilerplate
 -----------
 ```js
-var compare = require('./lib/compare');
+var claim = require('./lib/claim');
 
 ... you code here ...
 

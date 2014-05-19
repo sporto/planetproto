@@ -1,4 +1,4 @@
-var compare = require('../../../lib/compare');
+var claim = require('../../../lib/claim');
 
 var machine = {}
 var robot = {};
@@ -7,7 +7,7 @@ var robby = {};
 robot.__proto__ = machine;
 robby.__proto__ = robot;
 
-compare(machine.isPrototypeOf(robby), true);
+claim(machine.isPrototypeOf(robby), true);
 compare.same(Object.getPrototypeOf(robby), robot);
 
 module.exports = {

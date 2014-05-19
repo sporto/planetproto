@@ -2,16 +2,15 @@ Challenge
 --------
 
 Write a program that:
-- Asserts the result of 1 + 1
+- Claims the result of 1 + 1
 
 Boilerplate
 -----------
 
 ```js
-var compare = require('./lib/compare');
+var claim = require('./lib/claim');
 
 ... your code goes here ...
-
 ```
 
 Hints
@@ -24,10 +23,11 @@ You can write to the console in the same way as in the browser:
 
 console.log("text");
 
-To make an assertion write `assert(actual, expected)`, e.g.:
+Sometime the challenge will ask you to make a claim.
+To make a claim write `claim(actual, expected)`, e.g.:
 
 ```js
-assert(1 === 1, true);
+claim(1 === 1, true);
 ```
 
 When you are done, you must run:

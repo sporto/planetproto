@@ -50,21 +50,21 @@ Challenge
 - Define an 'Robot' function constructor
 - Create two instances of Robot: 'robby' and 'cranky'
 - Both robby and cranky should respond to 'parts' and 'capabilities', these should be empty arrays at first
-- Assert the result of robby.parts
-- Assert the result of cranky.parts
-- Assert the result of robby.capabilities
-- Assert the result of cranky.capabilities
+- Claim the result of robby.parts
+- Claim the result of cranky.parts
+- Claim the result of robby.capabilities
+- Claim the result of cranky.capabilities
 - Add 'core' to robby.parts, cranky.parts should still be empty
 - Add 'fly' to robby.capabilities, after doing that cranky.capabilities should also have 'fly' without adding to it directly
-- Assert the result of robby.parts
-- Assert the result of cranky.parts
-- Assert the result of robby.capabilities
-- Assert the result of cranky.capabilities
+- Claim the result of robby.parts
+- Claim the result of cranky.parts
+- Claim the result of robby.capabilities
+- Claim the result of cranky.capabilities
 
 Boilerplate
 -----------
 ```js
-var compare = require('./lib/compare');
+var claim = require('./lib/claim');
 
 ... you code here ...
 

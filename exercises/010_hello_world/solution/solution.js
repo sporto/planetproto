@@ -1,3 +1,3 @@
-var compare = require('../../../lib/compare');
+var claim = require('../../../lib/claim');
 
-compare(1+1, 2);
+claim(1 + 1, 2);

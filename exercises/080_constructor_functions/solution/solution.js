@@ -1,4 +1,4 @@
-var compare = require('../../../lib/compare');
+var claim = require('../../../lib/claim');
 
 function Robot() {
 	this.motors = 2;
@@ -6,8 +6,8 @@ function Robot() {
 
 var robby = new Robot();
 
-compare((robby instanceof Robot), true);
-compare(robby.motors, 2);
+claim((robby instanceof Robot), true);
+claim(robby.motors, 2);
 
 module.exports = {
 	Robot:   Robot,

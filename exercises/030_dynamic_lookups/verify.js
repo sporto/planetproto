@@ -1,5 +1,3 @@
-assertions = require('../../lib/assertions');
-
 function verify(exercise, userMod, verifyCallback){
 
 	function fail(msg) {

@@ -2,6 +2,7 @@ var exercise      = require('workshopper-exercise')();
 var filecheck     = require('workshopper-exercise/filecheck');
 var execute       = require('workshopper-exercise/execute');
 var comparestdout = require('workshopper-exercise/comparestdout');
+var wrappedexec   = require('workshopper-wrappedexec');
 
 // checks that the submission file actually exists
 exercise = filecheck(exercise);
@@ -11,5 +12,9 @@ exercise = execute(exercise);
 
 // compare stdout of solution and submission
 exercise = comparestdout(exercise);
+
+// wrap up the child process in a phantom wrapper that can
+// mess with the global environment and inspect execution
+exercise = wrappedexec(exercise);
 
 module.exports = exercise;

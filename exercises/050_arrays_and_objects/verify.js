@@ -1,4 +1,3 @@
-var assertions = require('../../lib/assertions');
 var _          = require('underscore');
 
 function verify(exercise, userMod, verifyCallback){

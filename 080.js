@@ -1,5 +1,3 @@
-var claim = require('./lib/claim');
-
 function Robot() {
 	this.motors = 2;
 };

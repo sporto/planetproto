@@ -1,5 +1,3 @@
-var claim = require('./lib/claim');
-
 var machine = {}
 
 var robot = {};
@@ -10,7 +8,7 @@ robot.__proto__ = machine;
 robby.__proto__ = robot;
 
 claim(machine.isPrototypeOf(robby), true);
-compare.same(Object.getPrototypeOf(robby), robot);
+claim.same(Object.getPrototypeOf(robby), robot);
 
 module.exports = {
 	machine:  machine,

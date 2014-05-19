@@ -1,5 +1,3 @@
-var claim = require('./lib/claim');
-
 var machine = {}
 
 var vehicle = {}

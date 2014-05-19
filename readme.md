@@ -37,8 +37,14 @@ will build on skills developed by solving previous problems.
 
 Once you have selected a problem, the workshop will remember which problem you are working on. 
 Using your preferred editor, simply create a file to write your solution in. Most problems will
-supply some boilerplate with which to get started. Copy this from the problem description to your
-solution file.
+supply some boilerplate with which to get started.
+
+Many challenges will ask you to make a 'claim'. We have provided `claim` as a global function.
+To make a claim write `claim(actual, expected)`, e.g.:
+
+```js
+claim(1 === 1, true);
+```
 
 #### 3. Testing your solution
 

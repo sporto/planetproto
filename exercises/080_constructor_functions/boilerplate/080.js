@@ -1,5 +1,3 @@
-var claim = require('./lib/claim');
-
 // ... you code here ...
 
 module.exports = {

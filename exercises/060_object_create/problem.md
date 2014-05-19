@@ -41,7 +41,7 @@ Challenge
 - Use Object.create to create another object called 'robot' with 'machine' set as the prototype
 - Use Object.create to create another object called 'robby' with 'robot' as the prototype
 - Claim the result of `machine.isPrototypeOf(robby)` (user claim())
-- Claim the results of `Object.getPrototypeOf(robby)` (use compare.same())
+- Claim the results of `Object.getPrototypeOf(robby)` (use claim.same())
 
 Boilerplate
 -----------

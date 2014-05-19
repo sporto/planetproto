@@ -19,7 +19,7 @@ You can write to the console in the same way as in the browser:
 
 console.log("text");
 
-Sometime the challenge will ask you to make a claim.
+Sometime the challenge will ask you to make a claim. We have provided claim as a global function.
 To make a claim write `claim(actual, expected)`, e.g.:
 
 ```js

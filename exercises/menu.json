@@ -7,5 +7,6 @@
 	"060 Object Create",
 	"070 New",
 	"080 Constructor functions",
-	"090 Implicit this"
+	"090 Implicit this",
+	"100 Function prototype"
 ]

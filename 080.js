@@ -1,4 +1,4 @@
-var compare = require('../../../lib/compare');
+var compare = require('./lib/compare');
 
 function Robot() {
 	this.motors = 2;

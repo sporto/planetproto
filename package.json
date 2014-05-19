@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "planetproto": "planetproto.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/sporto/planetproto.git"

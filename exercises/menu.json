@@ -4,5 +4,6 @@
 	"030 Dynamic lookups",
 	"040 Property assignments",
 	"050 Arrays and Objects",
-	"060 Object Create"
+	"060 Object Create",
+	"070 New"
 ]

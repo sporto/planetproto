@@ -6,29 +6,25 @@ When we use '__new__' with a function, JavaScript injects an implicit reference 
 When we do this:
 
 ```js
+function Alien() {
+	this.kind = 'alien'
+}
 
-	function Alien() {
-		this.kind = 'alien'
-	}
-	
-	var zippy = new Alien();
-	zippy.kind //=> 'alien'
-
+var zippy = new Alien();
+zippy.kind //=> 'alien'
 ```
 
 Behind the scenes it is like doing something like:
 
 ```js
-
-	function Alien() {
-		var this = {}; // this is not valid, just for illustration
-		this.__proto__ = Alien.prototype;
-		
-		this.kind = 'alien'
-		
-		return this;
-	}
-
+function Alien() {
+	var this = {}; // this is not valid, just for illustration
+	this.__proto__ = Alien.prototype;
+	
+	this.kind = 'alien'
+	
+	return this;
+}
 ```
 
 But keep in mind that the implicit '__this__' is only assigned to a new object when using '__new__'. If you forget '__new__' keyword then '__this__' will be the global object. Of course forgetting __new__ is a cause of multiple bugs, so don't forget __new__. 

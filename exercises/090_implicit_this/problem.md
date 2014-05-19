@@ -34,9 +34,9 @@ One popular convention is to capitalize the first letter of a function when it i
 Challenge
 ---------
 
-- Define two constructor functions: 'Machine' and 'Organic'
-- When called with 'new', the Machine constructor function should return the implicit 'this'
-- When called with 'new', the Organic constructor function should return an object of your own making, not the implicit 'this'.
+- Define two constructor functions: 'Robot' and 'Vehicle'
+- When called with 'new', the Robot constructor function should return the implicit 'this'
+- When called with 'new', the Vehicle constructor function should return an object of your own making, not the implicit 'this'.
 
 Boilerplate
 -----------
@@ -44,8 +44,8 @@ Boilerplate
 ... you code here ...
 
 module.exports = {
-	Machine:  Machine,
-	Organic:  Organic
+	Robot:    Robot,
+	Vehicle:  Vehicle
 }
 ```
 

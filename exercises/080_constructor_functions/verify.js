@@ -20,11 +20,11 @@ function verify(exercise, userMod, verifyCallback){
 	}
 
 	if (!_.isFunction(Robot)) {
-		return fail('machine must be a function');
+		return fail('Robot must be a function');
 	}
 
 	if (!(robby instanceof Robot)) {
-		return fail('robby must be an instance of machine');
+		return fail('robby must be an instance of Robot');
 	}
 
 	if (!robby.motors) {

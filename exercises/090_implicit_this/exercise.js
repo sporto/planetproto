@@ -29,6 +29,6 @@ exercise.addVerifyProcessor(function (verifyCallback) {
 exercise = execute(exercise);
 
 // compare stdout of solution and submission
-exercise = comparestdout(exercise);
+// exercise = comparestdout(exercise);
 
 module.exports = exercise;

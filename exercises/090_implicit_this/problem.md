@@ -40,12 +40,6 @@ Challenge
 
 Boilerplate
 -----------
-```js
-... you code here ...
 
-module.exports = {
-	Robot:    Robot,
-	Vehicle:  Vehicle
-}
-```
+A file 090.js with the necessary boilerplate has been created for you.
 

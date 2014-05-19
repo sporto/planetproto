@@ -54,13 +54,4 @@ Challenge
 Boilerplate
 -----------
 
-```js
-var claim = require('./lib/claim');
-... you code here ...
-
-module.exports = {
-	machine: machine,
-	robot:   robot,
-	robby:   robby
-}
-```
+A file 020.js with the necessary boilerplate has been created for you.

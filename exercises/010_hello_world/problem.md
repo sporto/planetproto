@@ -7,11 +7,7 @@ Write a program that:
 Boilerplate
 -----------
 
-```js
-var claim = require('./lib/claim');
-
-... your code goes here ...
-```
+A file 010.js with the necessary boilerplate has been created for you.
 
 Hints
 -----

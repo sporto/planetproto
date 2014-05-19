@@ -1,0 +1,3 @@
+var claim = require('./lib/claim');
+
+// your code goes here ...

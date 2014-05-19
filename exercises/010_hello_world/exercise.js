@@ -3,6 +3,11 @@ var filecheck     = require('workshopper-exercise/filecheck');
 var execute       = require('workshopper-exercise/execute');
 var comparestdout = require('workshopper-exercise/comparestdout');
 var wrappedexec   = require('workshopper-wrappedexec');
+var boilerplate   = require('workshopper-boilerplate');
+
+// create the boilerplate file for the user
+exercise = boilerplate(exercise);
+exercise.addBoilerplate(require.resolve('./010'));
 
 // checks that the submission file actually exists
 exercise = filecheck(exercise);

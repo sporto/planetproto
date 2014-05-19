@@ -5,6 +5,10 @@ var comparestdout = require('workshopper-exercise/comparestdout');
 var helpers       = require('../../lib/helpers');
 var verify        = require('./verify');
 
+// create the boilerplate file for the user
+exercise = boilerplate(exercise);
+exercise.addBoilerplate(require.resolve('./050'));
+
 // checks that the submission file actually exists
 exercise = filecheck(exercise);
 

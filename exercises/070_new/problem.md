@@ -17,10 +17,5 @@ var robot = machine.new();
 
 Boilerplate
 -----------
-```js
-... you code here ...
 
-module.exports = {
-	machine:  machine
-}
-```
+A file 070.js with the necessary boilerplate has been created for you.

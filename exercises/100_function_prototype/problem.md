@@ -23,7 +23,7 @@ As confusing as it may sound, this ‘__prototype__’ property is not the real 
 This of course generates a lot of confusion as people use the term '__prototype__' to refer to different things. 
 A good clarifirobotion is to always refer to the special '__prototype__' property of functions as '__the function prototype__', never just '__prototype__'.
 
-**This ‘__prototype__’ property points to the object that will be asigned as the prototype of instances created with that function when using '__new__'.**
+**This ‘__prototype__’ property points to the object that will be assigned as the prototype of instances created with that function when using '__new__'.**
 
 Confusing? This is easier to explain with an example:
 

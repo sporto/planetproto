@@ -6,7 +6,7 @@ Also many engines are highly optimized for constructor functions.
 In JavaScript you can create an object like this:
 
 ```js
-function Alien(){
+function Alien() {
 	this.age = 10;
 }
 
@@ -17,15 +17,15 @@ Functions when used with the keyword __new__ behave like factories, meaning that
 The new object they create is linked to the function by its prototype, more on this later. So in JavaScript we call this an __instance__ of the function.
 
 ```js
-//zippy is an instance of Alien
-console.log(zippy instanceof Alien ) //=> true
+// zippy is an instance of Alien
+console.log(zippy instanceof Alien) //=> true
 ```
 
 Challenge
 ----------
 
-- Define an 'Robot' function
-- Inside the Robot constructor assign a property 'motors' to 'this', set this to 2
+- Define a 'Robot' function
+- Inside the Robot constructor assign a property 'motors' on 'this', set this to 2
 - Create an instance of Robot called 'robby'
 - Assert the result of `(robby instanceof Robot)`
 - Assert the result of robby.motors

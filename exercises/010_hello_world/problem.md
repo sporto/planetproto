@@ -2,7 +2,7 @@ Challenge
 --------
 
 Write a program that:
-- Assets the result of 1 + 1
+- Asserts the result of 1 + 1
 
 Boilerplate
 -----------

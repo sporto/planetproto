@@ -5,7 +5,7 @@
 	"040 Property assignments",
 	"050 Arrays and Objects",
 	"060 Object Create",
-	"070 New",
+	"070 Dot New",
 	"080 Constructor functions",
 	"090 Implicit this",
 	"100 Function prototype"

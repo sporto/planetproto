@@ -1,8 +1,22 @@
+Simple objects
+=============
+
+There are many way of creating objects in JavaScript, but the simplest way is by using object literals:
+
+```js
+var alien = {
+	legs: 3
+};
+```
+
 Challenge
 --------
 
 Write a program that:
-- Claims the result of 1 + 1
+
+- Create an object called 'robot' using an object literal
+- robot should have a property 'smart'
+- Claim the result robot.smart
 
 Boilerplate
 -----------

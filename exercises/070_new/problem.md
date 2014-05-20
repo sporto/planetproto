@@ -6,13 +6,13 @@ At this stage we know enough to do amazing things with JavaScript objects.
 Challenge
 ---------
 
-- Define an object called 'machine'
-- Define a method called new in machine
-- When machine.new is called is should return a new object with the prototype set to machine e.g.
+- Define an object called 'robot'
+- Define a method called 'new' in robot
+- When robot.new is called is should return a new object with the prototype set to robot e.g.
 
 ```js
-var robot = machine.new();
-// machine should be the prototype of robot
+var robby = robot.new();
+// robot should be the prototype of robby
 ```
 
 Boilerplate

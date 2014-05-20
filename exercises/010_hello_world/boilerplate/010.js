@@ -1,3 +1,2 @@
-var claim = require('./lib/claim');
-
-// your code goes here ...
+//Claim the result of 1 + 1
+claim(1 + 1, __);

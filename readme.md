@@ -1,6 +1,3 @@
-Planet Proto
-=============
-
 <img src="http://cl.ly/image/2M273e1D2F0I/logo.png" alt="" />
 
 Understanding JavaScript Prototypes - Workshop

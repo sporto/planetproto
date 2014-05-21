@@ -8,24 +8,24 @@ function verify(exercise, userMod, verifyCallback){
 		return verifyCallback(msg, false);
 	}
 
-	var machine    = userMod.machine;
+	var Robot    = userMod.Robot;
 
-	if (!machine) {
-		return fail('You must export a machine variable');
+	if (!Robot) {
+		return fail('You must export a Robot variable');
 	}
 
-	if (!_.isFunction(machine.new)) {
-		return fail('machine.new must be a function');
+	if (!_.isFunction(Robot.new)) {
+		return fail('Robot.new must be a function');
 	}
 
-	var robot = machine.new();
+	var robby = Robot.new();
 
-	if (!robot) {
-		return fail('machine.new must return an object');
+	if (!robby) {
+		return fail('Robot.new must return an object');
 	}
 
-	if(robot.__proto__ !== machine) {
-		return fail('machine must be the prototype of robot');
+	if(robby.__proto__ !== Robot) {
+		return fail('Robot must be the prototype of robby');
 	}
 
 

@@ -1,9 +1,9 @@
-var robot = {
+var Robot = {
 	new: function () {
 		return Object.create(this);
 	}
 }
 
 module.exports = {
-	robot:  robot
+	Robot: Robot
 }

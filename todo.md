@@ -1,5 +1,3 @@
-- Find a way of injecting compare globally
-
 060
 ----
 
@@ -13,5 +11,4 @@ Exercise that uses .new, creates two arrays, one static
 100
 --- 
 
-Add a diagram
 Explain the idiomatic way

@@ -1,5 +1,5 @@
 // ... you code here ...
 
 module.exports = {
-	robot: robot
+	Robot: Robot
 }

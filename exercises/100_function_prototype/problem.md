@@ -42,6 +42,8 @@ zippy.__proto__ == Alien.prototype //=> true
 zippy.kind //=> alien
 ```
 
+Here is a [diagram showing this relationship](https://docs.google.com/drawings/d/1AKJcvxs0t3iGtqkRV8rFAWlo7tojkOSwjfhr1NWaTb0/pub?w=889&h=482)
+
 That is mostly everything there is to know about the JavaScript object model. Understanding how __\_\_proto\_\___ and __function.prototype__ are related will give you countless hours of joy and satisfaction, or maybe not.
 
 Challenge

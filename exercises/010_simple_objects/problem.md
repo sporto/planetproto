@@ -1,3 +1,18 @@
+```
+888b. 8                   w   
+8  .8 8 .d88 8d8b. .d88b w8ww 
+8wwP' 8 8  8 8P Y8 8.dP'  8   
+8     8 `Y88 8   8 `Y88P  Y8P       ,d
+                                    88
+8b,dPPYba,  8b,dPPYba,  ,adPPYba, MM88MMM ,adPPYba,
+88P'    "8a 88P'   "Y8 a8"     "8a  88   a8"     "8a
+88       d8 88         8b       d8  88   8b       d8
+88b,   ,a8" 88         "8a,   ,a8"  88,  "8a,   ,a8"
+88`YbbdP"'  88          `"YbbdP"'   "Y888 `"YbbdP"'
+88
+88
+```
+
 Simple objects
 =============
 

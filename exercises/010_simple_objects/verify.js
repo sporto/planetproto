@@ -1,25 +1,31 @@
+var makeVerificator = require('../../lib/helpers').makeVerificator;
+var assert          = require('chai').assert;
+
 function verify(exercise, userMod, verifyCallback){
 
-	function fail(msg) {
-		exercise.emit('fail', msg);
-		return verifyCallback(msg, false);
-	}
+	var errors = [];
+	var it = makeVerificator(exercise, errors);
 
 	var robot    = userMod.robot;
 
-	if (!robot) {
-		return fail('You must export a robot variable');
+	it('exports a robot variable', function () {
+		assert.isDefined(robot);
+	});
+
+	it('robot defines smart', function () {
+		assert.ok(robot.hasOwnProperty('smart'));
+	});
+
+	it('robot.smart is true', function () {
+		assert.isTrue(robot.smart);
+	});
+
+	if (errors.length) {
+		verifyCallback(null, false);
+	} else {
+		verifyCallback(null, true);
 	}
 
-	if (!robot.hasOwnProperty('smart')) {
-		return fail('robot must define smart');
-	}
-
-	if (robot.smart !== true) {
-		return fail('robot.smart must be true');
-	}
-
-	verifyCallback(null, true)
 }
 
 module.exports = verify;

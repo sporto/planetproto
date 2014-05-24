@@ -1,44 +1,45 @@
-// var assertions = require('../../lib/assertions');
-var _          = require('underscore');
+var makeVerificator = require('../../lib/helpers').makeVerificator;
+var assert          = require('chai').assert;
 
 function verify(exercise, userMod, verifyCallback){
 
-	function fail(msg) {
-		exercise.emit('fail', msg);
-		return verifyCallback(msg, false);
-	}
+	var errors = [];
+	var it = makeVerificator(exercise, errors);
 
 	var Robot    = userMod.Robot;
 	var Vehicle  = userMod.Vehicle;
 
-	if (!Robot) {
-		return fail('You must export a Robot variable');
+	it('exports a Robot variable', function () {
+		assert.isDefined(Robot);
+	});
+
+	it('exports a Vehicle variable', function () {
+		assert.isDefined(Vehicle);
+	});
+
+	it('Robot is a function', function () {
+		assert.isFunction(Robot);
+	});
+
+	it('Vehicle is a function', function () {
+		assert.isFunction(Vehicle);
+	});
+
+	it('new Robot() returns an instance of Robot', function () {
+		var robot = new Robot();
+		assert.instanceOf(robot, Robot);
+	});
+
+	it("new Vehicle() doesn't return an instance of Vehicle", function () {
+		var vehicle = new Vehicle();
+		assert.notInstanceOf(vehicle, Vehicle);
+	});
+
+	if (errors.length) {
+		verifyCallback(null, false);
+	} else {
+		verifyCallback(null, true);
 	}
-
-	if (!Vehicle) {
-		return fail('You must export a Vehicle variable');
-	}
-
-	if (!_.isFunction(Robot)) {
-		return fail('Robot must be a function');
-	}
-
-	if (!_.isFunction(Vehicle)) {
-		return fail('Vehicle must be a function');
-	}
-
-	var robot = new Robot();
-	var vehicle = new Vehicle();
-
-	if (!(robot instanceof Robot)) {
-		return fail('new Robot() must return an instance of Robot');
-	}
-
-	if ((vehicle instanceof Vehicle)) {
-		return fail('new Vehicle() must not return an instance of Vehicle');
-	}
-
-	verifyCallback(null, true);
 }
 
 module.exports = verify;

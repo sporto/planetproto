@@ -1,54 +1,56 @@
-assertions = require('../../lib/assertions');
+var makeVerificator = require('../../lib/helpers').makeVerificator;
+var assert          = require('chai').assert;
 
 function verify(exercise, userMod, verifyCallback){
 
-	function fail(msg) {
-		exercise.emit('fail', msg);
-		return verifyCallback(msg, false);
-	}
+	var errors = [];
+	var it = makeVerificator(exercise, errors);
 
 	var machine   = userMod.machine;
 	var robot     = userMod.robot;
 	var vehicle   = userMod.vehicle;
 
-	if (!machine) {
-		return fail('You must export a machine variable');
+	it('exports a machine variable', function () {
+		assert.isDefined(machine);
+	});
+
+	it('exports a robot variable', function () {
+		assert.isDefined(robot);
+	});
+
+	it('export a vehicle variable', function () {
+		assert.isDefined(vehicle)
+	});
+
+	it('machine is the prototype of robot', function () {
+		assert.strictEqual(robot.__proto__, machine);
+	});
+
+	it('machine is the prototype of vehicle', function () {
+		assert.strictEqual(vehicle.__proto__, machine);
+	});
+
+	it('machine defines an own property motors', function () {
+		assert.ok(machine.hasOwnProperty('motors'))
+	});
+
+	it('machine.motors is null', function () {
+		assert.isNull(machine.motors);
+	});
+
+	it('robot has an own property motors', function () {
+		assert.ok(robot.hasOwnProperty('motors'));
+	});
+
+	it('robot.motors is 4', function () {
+		assert.equal(robot.motors, 4);
+	});
+
+	if (errors.length) {
+		verifyCallback(null, false);
+	} else {
+		verifyCallback(null, true);
 	}
-
-	if (!robot) {
-		return fail('You must export a robot variable');
-	}
-
-	if (!vehicle) {
-		return fail('You must export a vehicle variable');
-	}
-
-	if (robot.__proto__ != machine) {
-		return fail('machine must be the prototype of robot');
-	}
-
-	if (vehicle.__proto__ != machine) {
-		return fail('machine must be the prototype of vehicle');
-	}
-
-	if (!machine.hasOwnProperty('motors')) {
-		return fail('machine must define a property motors');
-	}
-
-	if (machine.motors !== null) {
-		return fail('machine.motors must be null');
-	}
-
-	if (!robot.hasOwnProperty('motors')) {
-		return fail('robot must has a property motors');
-	}
-
-	if (robot.motors !== 4) {
-		return fail('robot.motors must be 4');
-	}
-
-
-	verifyCallback(null, true)
 }
 
 module.exports = verify;

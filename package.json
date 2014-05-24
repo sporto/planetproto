@@ -34,10 +34,10 @@
     "workshopper-exercise": "~0.2.3",
     "workshopper-wrappedexec": "~0.1.1",
     "underscore": "~1.6.0",
-    "workshopper-boilerplate": "0.0.1"
+    "workshopper-boilerplate": "0.0.1",
+    "chai": "~1.9.1"
   },
   "devDependencies": {
-    "mocha": "~1.19.0",
-    "chai": "~1.9.1"
+    "mocha": "~1.19.0"
   }
 }

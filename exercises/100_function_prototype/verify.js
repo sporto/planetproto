@@ -1,100 +1,106 @@
-// var assertions = require('../../lib/assertions');
-var _          = require('underscore');
+var makeVerificator = require('../../lib/helpers').makeVerificator;
+var _               = require('underscore');
+var assert          = require('chai').assert;
 
 function verify(exercise, userMod, verifyCallback){
 
-	function fail(msg) {
-		exercise.emit('fail', msg);
-		return verifyCallback(msg, false);
-	}
+	var errors = [];
+	var it = makeVerificator(exercise, errors);
 
-	var Robot    = userMod.Robot;
+	var Robot   = userMod.Robot;
 	var robby   = userMod.robby;
 	var cranky  = userMod.cranky;
 
-	if (!Robot) {
-		return fail('You must export a Robot variable');
+	it("exports Robot", function () {
+		assert.isDefined(Robot);
+	}); 
+
+	it("exports robby", function () {
+		assert.isDefined(robby);
+	}); 
+
+	it("exports cranky", function () {
+		assert.isDefined(cranky);
+	}); 
+
+	it("Robot is a function", function () {
+		assert.isFunction(Robot);
+	}); 
+
+	it("robby is an instance of Robot", function () {
+		assert.instanceOf(robby, Robot);
+	});
+
+	it("cranky is an instance of Robot", function () {
+		assert.instanceOf(cranky, Robot)
+	});
+
+	it('an instance of Robot defines parts', function () {
+		var other = new Robot();
+		assert.isDefined(other.parts);
+	});
+
+	it('an instance of Robot defines capabilities', function () {
+		var other = new Robot();
+		assert.isDefined(other.capabilities);
+	});
+
+	it('parts is an array', function () {
+		var other = new Robot();
+		assert.isArray(other.parts);
+	});
+
+	it('capabilities is an array', function () {
+		var other = new Robot();
+		assert.isArray(other.capabilities);
+	});
+
+	it('parts is initially empty', function () {
+		var other = new Robot();
+		assert.equal(other.parts.length, 0);
+	});
+
+	it('finds an item in robby.parts', function () {
+		assert.equal(robby.parts.length, 1);
+	});
+
+	it('first item in robby.parts is core', function () {
+		assert.equal(robby.parts[0], 'core');
+	});
+
+	it('finds zero items in cranky.parts', function () {
+		assert.equal(cranky.parts.length, 0);
+	});
+
+	it('capabilities is not directly added to robby', function () {
+		assert.isFalse(robby.hasOwnProperty('capabilities'));
+	});
+
+	it('capabilities is not directly added to cranky', function () {
+		assert.isFalse(cranky.hasOwnProperty('capabilities'));
+	});
+
+	it('finds one item in robby.capabilities', function () {
+		assert.equal(robby.parts.length, 1);
+	});
+
+	it('finds one item in cranky.capabilities', function () {
+		assert.equal(cranky.capabilities.length, 1);
+	});
+
+	it('finds fly in robby.capabilities', function () {
+		assert.equal(robby.capabilities[0], 'fly');
+	});
+
+	it('finds fly in cranky.capabilities', function () {
+		assert.equal(cranky.capabilities[0], 'fly');
+	});
+
+	if (errors.length) {
+		verifyCallback(null, false);
+	} else {
+		verifyCallback(null, true);
 	}
-
-	if (!robby) {
-		return fail('You must export a robby variable');
-	}
-
-	if (!cranky) {
-		return fail('You must export a cranky variable');
-	}
-
-	if (!_.isFunction(Robot)) {
-		return fail('Robot must be a function');
-	}
-
-	if (!(robby instanceof Robot)){
-		return fail('robby must be an instance of Robot');
-	}
-
-	if (!(cranky instanceof Robot)){
-		return fail('cranky must be an instance of Robot');
-	}
-
-	var robot = new Robot();
-
-	if (!robot.parts) {
-		return fail('An instance of Robot must define parts');
-	}
-
-	if (!robot.capabilities) {
-		return fail('An instance of Robot must define capabilities');
-	}
-
-	if (!_.isArray(robot.parts)) {
-		return fail('parts must be an array');
-	}
-
-	if (!_.isArray(robot.capabilities)) {
-		return fail('capabilities must be an array');
-	}
-
-	if (robot.parts.length > 0) {
-		return fail('parts must be initially empty');
-	}
-
-	if (robby.parts.length !== 1) {
-		return fail('expected to find one item in robby.parts');
-	}
-
-	if (robby.parts[0] != 'core') {
-		return fail('expected to find core in robby.parts');
-	}
-
-	if (cranky.parts.length !== 0) {
-		return fail('expected to find zero items in cranky.parts');
-	}
-
-	if (robby.hasOwnProperty('capabilities')) {
-		return fail('capabilities must not be directly added to robby');
-	}
-
-	if (cranky.hasOwnProperty('capabilities')) {
-		return fail('capabilities must not be directly added to cranky');
-	}
-
-	if (robby.capabilities.length !== 1) {
-		return fail('expected to find one item in robby.capabilities');
-	}
-
-	if (cranky.capabilities.length !== 1) {
-		return fail('expected to find one item in cranky.capabilities');
-	}
-
-	if (robby.capabilities[0] != 'fly') {
-		return fail('expected to find fly in robby.capabilities');
-	}
-
-	if (cranky.capabilities[0] != 'fly') {
-		return fail('expected to find fly in cranky.capabilities');
-	}
-
-	verifyCallback(null, true);
 }
 
 module.exports = verify;

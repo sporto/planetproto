@@ -1,41 +1,43 @@
-var assertions = require('../../lib/assertions');
-var _          = require('underscore');
+var makeVerificator = require('../../lib/helpers').makeVerificator;
+var assert          = require('chai').assert;
 
 function verify(exercise, userMod, verifyCallback){
 
-	function fail(msg) {
-		exercise.emit('fail', msg);
-		return verifyCallback(msg, false);
-	}
+	var errors = [];
+	var it = makeVerificator(exercise, errors);
 
 	var Robot    = userMod.Robot;
-	var robby      = userMod.robby;
+	var robby    = userMod.robby;
 
-	if (!Robot) {
-		return fail('You must export a Robot variable');
+	it('exports a Robot variable', function () {
+		assert.isDefined(Robot);
+	});
+
+	it('exports a robby variable', function () {
+		assert.isDefined(robby);
+	});
+
+	it('Robot is a function', function () {
+		assert.isFunction(Robot);
+	});
+
+	it('robby is an instance of Robot', function () {
+		assert.instanceOf(robby, Robot);
+	});
+
+	it('robby has property motors', function () {
+		assert.isDefined(robby.motors);
+	});
+
+	it('robby.motors is 2', function () {
+		assert.equal(robby.motors, 2);
+	});
+
+	if (errors.length) {
+		verifyCallback(null, false);
+	} else {
+		verifyCallback(null, true);
 	}
-
-	if (!robby) {
-		return fail('You must export a robby variable');
-	}
-
-	if (!_.isFunction(Robot)) {
-		return fail('Robot must be a function');
-	}
-
-	if (!(robby instanceof Robot)) {
-		return fail('robby must be an instance of Robot');
-	}
-
-	if (!robby.motors) {
-		return fail('robby must have property motors');
-	}
-
-	if (robby.motors !== 2) {
-		return fail('robby.motors should be 2');
-	}
-
-	verifyCallback(null, true)
 }
 
 module.exports = verify;

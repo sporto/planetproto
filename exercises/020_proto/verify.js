@@ -1,47 +1,52 @@
+var makeVerificator = require('../../lib/helpers').makeVerificator;
+var assert          = require('chai').assert;
+
 function verify(exercise, userMod, verifyCallback){
 
-	function fail(msg) {
-		exercise.emit('fail', msg);
-		return verifyCallback(msg, false);
-	}
+	var errors = [];
+	var it = makeVerificator(exercise, errors);
 
 	var machine  = userMod.machine;
 	var robot    = userMod.robot;
 	var robby    = userMod.robby;
 
-	if (!machine) {
-		return fail('You must export a machine variable');
-	}
+	it('exports a machine variable', function () {
+		assert.isDefined(machine);
+	});
 
-	if (!robot) {
-		return fail('You must export a robot variable');
-	}
+	it('exports a robot variable', function () {
+		assert.isDefined(robot);
+	});
 
-	if (!robby) {
-		return fail('You must export a robby variable');
-	}
+	it('exports a robby variable', function () {
+		assert.isDefined(robot);
+	});
 
-	if (robot.__proto__ != machine) {
-		return fail('machine must be the prototype of robot');
-	}
+	it('machine is the prototype of robot', function () {
+		assert.strictEqual(robot.__proto__, machine);
+	});
 
-	if (robby.__proto__ != robot) {
-		return fail('robot must be the prototype of robby');
-	}
+	it('robot is the prototype of robby', function () {
+		assert.strictEqual(robby.__proto__, robot);
+	});
 
-	if (machine.motors != 4) {
-		return fail("machine must define motors");
-	}
+	it("machine defines motors", function () {
+		assert.equal(machine.motors, 4);
+	});
 
-	if (robot.friendly !== true) {
-		return fail('robot must define friendly');
-	}
+	it('robot defines friendly', function () {
+		assert.isTrue(robby.friendly);
+	});
 
-	if (!robot.hasOwnProperty('friendly')) {
-		return fail('friendly must be defined in the robot object');
-	}
+	it('friendly is defined in the robot object', function () {
+		assert.isTrue(robot.hasOwnProperty('friendly'));
+	});
 
-	verifyCallback(null, true)
+	if (errors.length) {
+		verifyCallback(null, false);
+	} else {
+		verifyCallback(null, true);
+	}
 }
 
 module.exports = verify;

@@ -36,7 +36,7 @@ Write a program that:
 Boilerplate
 -----------
 
-A file 010.js with the necessary boilerplate has been created for you.
+A file 010.js with the necessary boilerplate has been created for you. This files contains the instructions and placeholders for your code.
 
 Hints
 -----

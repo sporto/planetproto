@@ -59,7 +59,7 @@ Challenge
 - Claim the result of robby.capabilities
 - Claim the result of cranky.capabilities
 - Add 'core' to robby.parts, cranky.parts should still be empty
-- Add 'fly' to robby.capabilities, after doing that cranky.capabilities should also have 'fly' without adding to it directly
+- Add 'fly' to robby.capabilities, after doing that cranky.capabilities must also have 'fly' without adding to it directly, so this property has to be shared
 - Claim the result of robby.parts
 - Claim the result of cranky.parts
 - Claim the result of robby.capabilities

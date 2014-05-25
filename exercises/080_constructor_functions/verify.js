@@ -33,6 +33,11 @@ function verify(exercise, userMod, verifyCallback){
 		assert.equal(robby.motors, 2);
 	});
 
+	it('defines robby.motors inside the constructor', function () {
+		var other = new Robot();
+		assert.isDefined(other.motors);
+	});
+
 	if (errors.length) {
 		verifyCallback(null, false);
 	} else {

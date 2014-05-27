@@ -1,6 +1,8 @@
-<img src="http://cl.ly/image/2M273e1D2F0I/logo.png" alt="" />
+<img src="http://cl.ly/image/2M273e1D2F0I/logo.png" alt="logo" />
 
 Understanding JavaScript Prototypes - Workshop
+
+<img src="http://cl.ly/image/2g0Y2y0r2241/planetproto.png" alt="screenshot" />
 
 ## Mission
 
@@ -8,7 +10,14 @@ The goal of this workshop is to help you understand the object model in Javascri
 
 Most guides / tutorials start explaining JavaScript objects by going directly to ‘__constructor functions__’, this workshop is different, it starts simple by explaining prototype chains and building from there.
 
-**Please read the exercises thoroughly and obey all conditions, they are there to help you learn!**
+**Please read the exercises thoroughly and follow all conditions, they are there to help you learn!**
+
+## What you will learn
+
+- What are prototypes chains
+- Message delegation in a prototype chain
+- What are function constructors
+- What are function prototypes and how to work with them
 
 ## Installation & Update
 

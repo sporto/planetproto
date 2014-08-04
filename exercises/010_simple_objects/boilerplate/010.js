@@ -5,6 +5,7 @@ __
 // -> Claim the result robot.smart
 claim(robot.smart, __);
 
+// ------------------------------------------------
 // Common JS exports for verification, don't modify
 module.exports = {
 	robot: robot

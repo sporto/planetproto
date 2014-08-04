@@ -1,22 +1,26 @@
 // -> Define three objects: 'machine', 'robot' and 'vehicle'
-// -> In the definition of machine add a property 'motors' set to null.
+//    In the definition of machine add a property 'motors' set to null.
+__
+
 // -> Make machine the prototype of robot and vehicle
 __
 
-// -> Claim machines.motors, robot.motors and vehicle.motors (in that order)
+// -> What are `machines.motors`, `robot.motors` and `vehicle.motors`?
 claim(machine.motors, __);
 claim(robot.motors, __);
 claim(vehicle.motors, __);
 
-// -> Set robot.motors to 4 by direct assignment
+// -> Set `robot.motors` to 4 by direct assignment
 __
 
-// -> Claim again machines.motors, robot.motors and vehicle.motors 
-//    (in that order)
+// -> What are `machines.motors`, `robot.motors` and `vehicle.motors` now?
 claim(machine.motors, __);
 claim(robot.motors, __);
 claim(vehicle.motors, __);
 
+
+// ------------------------------------------------
+// Common JS exports for verification, don't modify
 module.exports = {
 	machine:  machine,
 	vehicle:  vehicle,

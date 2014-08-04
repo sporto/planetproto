@@ -7,6 +7,8 @@
 __
 
 
+// ------------------------------------------------
+// Common JS exports for verification, don't modify
 module.exports = {
 	Robot:    Robot,
 	Vehicle:  Vehicle

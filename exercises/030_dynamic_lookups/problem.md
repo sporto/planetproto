@@ -29,16 +29,5 @@ Keypoints
 Challenge
 ----------
 
-- Define three objects: 'machine' 'vehicle' and 'robot'
-- Make machine the prototype of vehicle
-- Make machine the prototype of robot
-- Claim the result of vehicle.motors (using the compare function)
-- Claim the result of robot.motors
-- After that, define a 'motors' property on machine, set this to 4
-- Claim the result of vehicle.motors again
-- Claim the result of robot.motors again
-
-Boilerplate
------------
-
+Follow the instructions in the boilerplate file created. 
 A file 030.js with the necessary boilerplate has been created for you.

@@ -24,13 +24,5 @@ console.log(zippy instanceof Alien) //=> true
 Challenge
 ----------
 
-- Define a 'Robot' function
-- Inside the Robot constructor assign a property 'motors' on 'this', set this to 2
-- Create an instance of Robot called 'robby'
-- Claim the result of `(robby instanceof Robot)`
-- Claim the result of robby.motors
-
-Boilerplate
------------
-
+Follow the instructions in the boilerplate file created.
 A file 080.js with the necessary boilerplate has been created for you.

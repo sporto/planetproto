@@ -30,6 +30,9 @@ claim(robby.capabilities, __);
 // -> Claim the result of cranky.capabilities
 claim(cranky.capabilities, __);
 
+
+// ------------------------------------------------
+// Common JS exports for verification, don't modify
 module.exports = {
 	Robot:  Robot,
 	robby:  robby,

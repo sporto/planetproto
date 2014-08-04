@@ -18,4 +18,5 @@ var robby = Robot.new();
 Boilerplate
 -----------
 
+Follow the instructions in the boilerplate file created. 
 A file 070.js with the necessary boilerplate has been created for you.

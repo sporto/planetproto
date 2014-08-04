@@ -42,28 +42,24 @@ files contains the instructions and placeholders for your code.
 
 At the end of each boilerplate you will see a common js export 
 `modules.exports = ...`. This is there to aid the verifier, please don't modify
-that section. 
+that section.
 
+Note the `__` placeholders in the boilerplate. You should replace this with your own code.
 
-Hints
+Claims
 -----
 
-To make Node.js program, create a new file with a .js extension and start
-writing JavaScript! Exefriendly your program by running it with the node
-command. e.g.:
-
-$ node program.js
-You can write to the console in the same way as in the browser:
-
-console.log("text");
-
-Sometime the challenge will ask you to make a claim. We have provided claim as 
+Sometimes the challenge will ask you to make a claim. We have provided claim as 
 a global function.
+
 To make a claim write `claim(actual, expected)`, e.g.:
 
 ```js
 claim(1 === 1, true);
 ```
+
+Verification
+------
 
 When you are done, you must run:
 

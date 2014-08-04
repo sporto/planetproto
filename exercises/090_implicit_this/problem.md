@@ -34,12 +34,6 @@ One popular convention is to capitalize the first letter of a function when it i
 Challenge
 ---------
 
-- Define two constructor functions: 'Robot' and 'Vehicle'
-- When called with 'new', the Robot constructor function should return the implicit 'this'
-- When called with 'new', the Vehicle constructor function should return an object of your own making, not the implicit 'this'.
-
-Boilerplate
------------
-
+Follow the instructions in the boilerplate file created.
 A file 090.js with the necessary boilerplate has been created for you.
 

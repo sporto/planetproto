@@ -37,15 +37,6 @@ There is no such thing as Object.setPrototype.
 Challenge
 ---------
 
-- Create an object called 'machine'
-- Use Object.create to create another object called 'robot' with 'machine' set as the prototype
-- Use Object.create to create another object called 'robby' with 'robot' as the prototype
-- Claim the result of `machine.isPrototypeOf(robby)` (use claim())
-- Claim the result of `robot.isPrototypeOf(robby)` (use claim())
-- Claim the results of `Object.getPrototypeOf(robby)` (use claim.same())
-
-Boilerplate
------------
-
+Follow the instructions in the boilerplate file created. 
 A file 060.js with the necessary boilerplate has been created for you.
 

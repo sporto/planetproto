@@ -3,27 +3,26 @@
 // -> Make machine the prototype of robot
 __
 
-// What is vehicle.motors?
-// -> Claim the result of vehicle.motors
+// -> What is `vehicle.motors`?
 claim(vehicle.motors, __);
 
-// What is robot.motors?
-// -> Claim the result of robot.motors
+// -> What is `robot.motors`?
 claim(robot.motors, __);
 
 // -> Define a 'motors' property on machine, set this to 4
 __
 
-// What is vehicle.motors?
-// -> Claim the result of vehicle.motors again
+// -> What is `vehicle.motors` now?
 claim(vehicle.motors, __);
 
-// What is robot.motors?
-// -> Claim the result of robot.motors again
+// -> What is `robot.motors`?
 claim(robot.motors, __);
 
+
+// ------------------------------------------------
+// Common JS exports for verification, don't modify
 module.exports = {
 	machine: machine,
-	vehicle:    vehicle,
-	robot:    robot
+	vehicle: vehicle,
+	robot:   robot
 }

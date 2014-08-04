@@ -43,15 +43,5 @@ You can check that one object is the prototype of another by doing:
 Challenge
 ----------
 
-- Create three objects: 'machine', 'robot' and 'robby'.
-- Make machine the prototype of robot.
-- Make robot the prototype of robby.
-- Add a property 'motors' to machine with value of 4
-- Add a property 'friendly' to robot with value true
-- Claim the result of robby.motors (using the claim function provided)
-- Claim the result of robby.friendly
-
-Boilerplate
------------
-
+Follow the instructions in the boilerplate file created. 
 A file 020.js with the necessary boilerplate has been created for you.

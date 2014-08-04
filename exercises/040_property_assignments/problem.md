@@ -26,14 +26,5 @@ Note that the property 'kind' now exists in both alien and zippy.
 Challenge
 ---------
 
-- Define three objects: 'machine', 'robot' and 'vehicle'
-- In the definition of machine add a property 'motors' set to null.
-- Make machine the prototype of robot and vehicle
-- Claim machines.motors, robot.motors and vehicle.motors (in that order)
-- Set robot.motors to 4 by direct assignment
-- Claim again machines.motors, robot.motors and vehicle.motors (in that order)
-
-Boilerplate
------------
-
+Follow the instructions in the boilerplate file created. 
 A file 040.js with the necessary boilerplate has been created for you.

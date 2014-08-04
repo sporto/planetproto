@@ -51,23 +51,7 @@ That is mostly everything there is to know about the JavaScript object model. Un
 Challenge
 ---------
 
-- Define a 'Robot' function constructor
-- Create two instances of Robot: 'robby' and 'cranky'
-- Both robby and cranky should respond to 'parts' and 'capabilities', these should be empty arrays at first
-- Claim the result of robby.parts
-- Claim the result of cranky.parts
-- Claim the result of robby.capabilities
-- Claim the result of cranky.capabilities
-- Add 'core' to robby.parts, cranky.parts should still be empty
-- Add 'fly' to robby.capabilities, after doing that cranky.capabilities must also have 'fly' without adding to it directly, so this property has to be shared
-- Claim the result of robby.parts
-- Claim the result of cranky.parts
-- Claim the result of robby.capabilities
-- Claim the result of cranky.capabilities
-
-Boilerplate
------------
-
+Follow the instructions in the boilerplate file created.
 A file 100.js with the necessary boilerplate has been created for you.
 
 

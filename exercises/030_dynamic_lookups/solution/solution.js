@@ -1,7 +1,5 @@
 var machine = {}
-
 var vehicle = {}
-
 var robot = {}
 
 vehicle.__proto__ = machine;
@@ -14,11 +12,13 @@ claim(robot.motors, undefined);
 
 machine.motors = 4;
 
-// What is vehicle.motors
+// -> What is `vehicle.motors` now?
 claim(vehicle.motors, 4);
-// What is robot.motors?
+
+// -> What is `robot.motors`?
 claim(robot.motors, 4);
 
+// ------------------------------------------------
 module.exports = {
 	machine: machine,
 	vehicle: vehicle,

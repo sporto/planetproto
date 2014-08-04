@@ -9,7 +9,10 @@ var robot = {};
 robot.__proto__ = machine;
 vehicle.__proto__ = machine;
 
+// -> What is `robot.parts`?
 claim(robot.parts, []);
+
+// -> What is `vehicle.parts`?
 claim(vehicle.parts, []);
 
 claim(robot.capabilities, {});

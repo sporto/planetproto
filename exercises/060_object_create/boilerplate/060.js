@@ -1,5 +1,5 @@
-// -> Create an object called 'machine'
-__
+// -> Let's create an object called 'machine'
+var machine = {}
 
 // -> Use Object.create to create another object called 'robot' with 'machine' 
 //    set as the prototype

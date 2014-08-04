@@ -2,8 +2,9 @@
 //    In the definition of machine add a property 'motors' set to null.
 __
 
-// -> Make machine the prototype of robot and vehicle
-__
+// -> Let's make machine the prototype of robot and vehicle
+vehicle.__proto__ = machine;
+robot.__proto__ = machine;
 
 // -> What are `machines.motors`, `robot.motors` and `vehicle.motors`?
 claim(machine.motors, __);

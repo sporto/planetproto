@@ -6,6 +6,7 @@ var vehicle = {};
 
 var robot = {};
 
+// -> Let's make machine the prototype of robot and vehicle
 vehicle.__proto__ = machine;
 robot.__proto__ = machine;
 

@@ -53,17 +53,8 @@ To make a claim write `claim(actual, expected)`, e.g.:
 ```js
 claim(1 === 1, true);
 ```
-
-#### 3. Testing your solution
-
-Use the workshop's `run` command to point the workshop at your solution file. Your solution will loaded 
-and passed the problem input. This usually won't perform any validation, it will only show the program output.
-
-```
-$ planetproto run mysolution.js
-```
  
-#### 4. Verifying your solution
+#### 3. Verifying your solution
 
 Your solution will be verified against the output of the 'official' solution. 
 If all of the output matches, then you have successfully solved the problem!

@@ -23,8 +23,8 @@ console.log(zippy.kind); //=> 'alien'
 Keypoints
 ---------
 
-- Objects delegate property lookups to their prototype
-- A prototype can be shared between objects
+- Objects delegate property lookups to their prototype.
+- A prototype can be shared between objects.
 
 Challenge
 ----------

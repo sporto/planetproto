@@ -29,7 +29,7 @@ function Alien() {
 
 But keep in mind that the implicit '__this__' is only assigned to a new object when using '__new__'. If you forget '__new__' keyword then '__this__' will be the global object. Of course forgetting __new__ is a cause of multiple bugs, so don't forget __new__. 
 
-One popular convention is to capitalize the first letter of a function when it is intented to be used as a function constructor e.g. 'Alien', so you now straightaway to you are missing the __new__ keyword.
+One popular convention is to capitalize the first letter of a function when it is intended to be used as a function constructor e.g. 'Alien', so you know straight away that you are missing the __new__ keyword.
 
 Challenge
 ---------

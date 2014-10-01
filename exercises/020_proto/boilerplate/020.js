@@ -18,7 +18,7 @@ __
 // -> What is `robby.motors`?
 claim(robby.motors, __);
 
-// -> What is `robby.friendy`?
+// -> What is `robby.friendly`?
 claim(robby.friendly, __);
 
 

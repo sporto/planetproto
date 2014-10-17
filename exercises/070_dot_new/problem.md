@@ -8,7 +8,7 @@ Challenge
 
 - Define an object called 'Robot'
 - Define a method called 'new' in Robot
-- When Robot.new is called is should return a new object with the prototype set to Robot e.g.
+- When Robot.new is called it should return a new object with the prototype set to Robot e.g.
 
 ```js
 var robby = Robot.new();

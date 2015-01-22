@@ -24,7 +24,7 @@ console.log(alien.skills);
 // maybe we didn't expect this, we have modified the array in the prototype object.
 ```
 
-When you change and array or an object you make the change directly on the object.
+When you change an array or an object you make the change directly on the object.
 
 Challenge
 ---------

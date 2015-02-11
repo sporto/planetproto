@@ -6,7 +6,7 @@
   }
   , "exercise": {
       "010 Simple objects": "010 Objets simples"
-    , "020 Proto": "020 Proto"
+    , "020 Proto": "020 __proto__"
     , "030 Dynamic lookups": "030 Lookups dynamiques"
     , "040 Property assignments": "040 Affectation de propriétés"
     , "050 Arrays and Objects": "050 Tableaux et Objets"

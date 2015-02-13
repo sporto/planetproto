@@ -1,5 +1,5 @@
 L’objet `__proto__`
--------------------
+===================
 
 Pour comprendre les chaînes de prototypes en JavaScript, l’approche la plus simple consiste à examiner la propriété `__proto__`.  Malheureusement, celle-ci ne fait pas officiellement partie du standard pour JavaScript, en tout cas pas avant au moins ES6.  Aussi, évitez de l’utiliser dans du code de production.  Mais pour le moment, elle facilite l’explication des prototypes.
 

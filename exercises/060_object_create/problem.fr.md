@@ -1,5 +1,5 @@
 Object.create
--------------
+=============
 
 Comme expliqué précédemment, `__proto__` n’est pas une manière bien prise en charge d’affecter un prototype à des objets.  Du coup, la manière la plus simple qui nous reste utilise `Object.create()`.  C’est disponible à partir d’ES5, mais pour les navigateurs ou moteurs plus anciens, on peut utiliser [es5-shim](https://github.com/kriskowal/es5-shim) pour en disposer.
 
@@ -23,7 +23,8 @@ console.log(zack.age); // => '13'
 
 C’est vrai, l’objet à passer peut sembler un peu compliqué, mais c’est comme ça.  Consultez la documentation officielle [ici](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object/create).
 
-### `Object.getPrototypeOf`
+`Object.getPrototypeOf`
+-----------------------
 
 On peut récupérer le prototype d’un objet avec `Object.getPrototypeOf`.
 

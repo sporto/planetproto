@@ -1,5 +1,5 @@
 Tableaux et Objets dans les prototypes
---------------------------------------
+======================================
 
 Les tableaux et objets risquent de ne pas se comporter comme vous pourriez vous y attendre.
 

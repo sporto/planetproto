@@ -23,7 +23,7 @@ console.log(zack.age); // => ‘13’
 
 Yes, the object you need to pass is a bit convoluted, but that is the way it is. See the docs [here](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/create).
 
-### Object.getPrototype
+### `Object.getPrototypeOf`
 
 You can get the prototype of an object using Object.getPrototypeOf
 
@@ -37,6 +37,6 @@ There is no such thing as Object.setPrototype.
 Challenge
 ---------
 
-Follow the instructions in the boilerplate file created. 
+Follow the instructions in the boilerplate file created.
 A file 060.js with the necessary boilerplate has been created for you.
 

@@ -7,7 +7,7 @@ __
 // -> Créez un objet `robby`
 __
 
-// -> Faites de `machines` le prototype de `robot`
+// -> Faites de `machine` le prototype de `robot`
 __
 
 // -> Faites de `robot` le prototype de `robby`

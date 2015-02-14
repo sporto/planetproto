@@ -1,7 +1,8 @@
 Les lookups sur prototype sont dynamiques
 =========================================
 
-Vous pouvez ajouter des propriétés au prototype d’un objet à tout moment : le lookup à travers la chaîne de prototypes les trouvera correctement.
+Vous pouvez ajouter des propriétés au prototype d’un objet à tout moment : le
+lookup à travers la chaîne de prototypes les trouvera correctement.
 
 ```js
 var alien = {}
@@ -29,4 +30,5 @@ Points-clés
 Défi
 ----
 
-Un fichier à trous `030.js` avec les instructions nécessaires vient d’être créé pour vous.  Suivez les instructions qui y figurent.
+Un fichier à trous `{boilerplate:030.fr.js}` avec les instructions nécessaires
+vient d’être créé pour vous.  Suivez les instructions qui y figurent.

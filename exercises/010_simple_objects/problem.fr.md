@@ -37,7 +37,7 @@ Défi
 Base de travail
 ---------------
 
-Un fichier `010.js` avec le squelette nécessaire a été créé pour vous.
+Un fichier `{boilerplate:010.fr.js}` avec le squelette nécessaire a été créé pour vous.
 Il contient les instructions et blancs à remplir pour votre code.
 
 À la fin de chaque fichier à trou vous trouverez un export CommonJS
@@ -65,7 +65,7 @@ Vérification
 
 Quand vous avez terminé, vous n’avez plus qu’à lancer :
 
-    $ {appname} verify 010.js
+    $ {appname} verify {boilerplate:010.fr.js}
 
 pour continuer.  Votre programme sera testé, un rapport s’affichera, et
 la leçon sera marquée comme « faite » si vous avez réussi.

@@ -10,17 +10,23 @@ function Alien(){
 Alien.prototype
 ```
 
-Aussi déstabilisant que cela puisse paraître, cette propriété `prototype` n'est pas le prototype (`__proto__`) de la fonction.
+Aussi déstabilisant que cela puisse paraître, cette propriété `prototype`
+n'est pas le prototype (`__proto__`) de la fonction.
 
 ```js
 Alien.__proto__ === Alien.prototype // => false
 ```
 
-Évidemment, ça engendre beaucoup de confusion quand les gens utilisent le terme `prototype` pour parler de plusieurs choses différentes.
+Évidemment, ça engendre beaucoup de confusion quand les gens utilisent le
+Éterme `prototype` pour parler de plusieurs choses différentes.
 
-Une bonne manière de clarifier les choses consiste à parler de la propriété `prototype` des fonctions en tant que « prototype de fonction », et pas juste « prototype ».
+Une bonne manière de clarifier les choses consiste à parler de la propriété
+`prototype` des fonctions en tant que « prototype de fonction », et pas juste
+« prototype ».
 
-**Cette propriété `prototype` pointe sur l’objet qui sera affecté comme prototype aux instances créées en appelant la fonction avec l’opérateur `new`.**
+**Cette propriété `prototype` pointe sur l’objet qui sera affecté comme
+prototype aux instances créées en appelant la fonction avec l’opérateur
+`new`.**
 
 Vous n’y comprenez rien ?  Ça devrait être plus clair avec un exemple :
 
@@ -45,11 +51,17 @@ zippy.kind // => 'alien'
 
 Voici un [diagramme qui illustre cette relation](https://docs.google.com/drawings/d/1AKJcvxs0t3iGtqkRV8rFAWlo7tojkOSwjfhr1NWaTb0/pub?w=889&h=482).
 
-Alors, si vous créez deux instances de `Alien`, les deux auront `Alien.prototype` comme valeur pour leur `__proto__`.  Du coup tout ce que vous y mettrez sera partagé par les instances.
+Alors, si vous créez deux instances de `Alien`, les deux auront
+`Alien.prototype` comme valeur pour leur `__proto__`.  Du coup tout ce que
+vous y mettrez sera partagé par les instances.
 
-Voilà l’essentiel de ce que vous devez savoir sur le modèle objet en JavaScript.  Comprendre comment `__proto__` et `function.prototype` sont reliés vous apportera d’innombrables heures de joie et de satisfaction…  ou peut-être pas.
+Voilà l’essentiel de ce que vous devez savoir sur le modèle objet en
+JavaScript.  Comprendre comment `__proto__` et `function.prototype` sont
+reliés vous apportera d’innombrables heures de joie et de satisfaction…  ou
+peut-être pas.
 
 Défi
 ----
 
-Un fichier à trous `100.js` avec les instructions nécessaires vient d’être créé pour vous.  Suivez les instructions qui y figurent.
+Un fichier à trous `{boilerplate:100.fr.js}` avec les instructions nécessaires vient d’être
+créé pour vous.  Suivez les instructions qui y figurent.

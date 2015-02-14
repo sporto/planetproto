@@ -1,7 +1,8 @@
 Tableaux et Objets dans les prototypes
 ======================================
 
-Les tableaux et objets risquent de ne pas se comporter comme vous pourriez vous y attendre.
+Les tableaux et objets risquent de ne pas se comporter comme vous pourriez
+vous y attendre.
 
 Voyons ce qui arrive quand on modifie un tableau :
 
@@ -25,10 +26,11 @@ console.log(alien.skills);
 // l’objet prototype.
 ```
 
-Quand vous changez un tableau ou un objet, ce changement est partagé, car central
-au niveau du prototype.
+Quand vous changez un tableau ou un objet, ce changement est partagé, car
+central au niveau du prototype.
 
 Défi
 ----
 
-Un fichier à trous `050.js` avec les instructions nécessaires vient d’être créé pour vous.  Suivez les instructions qui y figurent.
+Un fichier à trous `{boilerplate:050.fr.js}` avec les instructions nécessaires vient d’être
+créé pour vous.  Suivez les instructions qui y figurent.

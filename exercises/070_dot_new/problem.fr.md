@@ -1,14 +1,15 @@
 Notre propre `new`
 ==================
 
-à ce stade vous en savez assez pour faire des trucs de fou avec JavaScript.
+À ce stade vous en savez assez pour faire des trucs de fou avec JavaScript.
 
 Défi
 ----
 
 - Définissez un objet appelé `Robot`
 - Ajoutez-lui une méthode `new`
-- Quand on appelle `Robot.new`, ça doit renvoyer un nouvel objet dont `Robot` est le prototype, par exemple :
+- Quand on appelle `Robot.new`, ça doit renvoyer un nouvel objet dont `Robot`
+   est le prototype, par exemple :
 
 ```js
 var robby = Robot.new();
@@ -18,4 +19,5 @@ var robby = Robot.new();
 Base de travail
 ---------------
 
-Un fichier à trous `070.js` avec les instructions nécessaires vient d’être créé pour vous.  Suivez les instructions qui y figurent.
+Un fichier à trous `{boilerplate:070.fr.js}` avec les instructions nécessaires vient d’être
+créé pour vous.  Suivez les instructions qui y figurent.

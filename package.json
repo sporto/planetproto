@@ -29,13 +29,13 @@
   },
   "homepage": "https://github.com/sporto/planetproto",
   "dependencies": {
-    "workshopper": "~1.0.0-alpha07",
+    "chai": "~1.9.1",
     "colors-tmpl": "~0.1.0",
-    "workshopper-exercise": "~0.2.3",
-    "workshopper-wrappedexec": "~0.1.1",
     "underscore": "~1.6.0",
-    "workshopper-boilerplate": "0.0.1",
-    "chai": "~1.9.1"
+    "workshopper": "^2.3.1",
+    "workshopper-boilerplate": "^1.1.0",
+    "workshopper-exercise": "^2.3.0",
+    "workshopper-wrappedexec": "~0.1.1"
   },
   "devDependencies": {
     "mocha": "~1.19.0"

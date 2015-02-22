@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const workshopper = require('workshopper'), 
+const workshopper = require('workshopper'),
 	path        = require('path'),
 	credits     = require('./credits'),
 	menu        = require('./exercises/menu'),
@@ -20,6 +20,7 @@ workshopper({
   , exerciseDir : fpath('./exercises/')
   , appDir      : __dirname
   , helpFile    : fpath('help.txt')
+  , languages   : [ 'en', 'fr' ]
   , menuItems   : [ {
         name    : 'credits'
       , handler : credits

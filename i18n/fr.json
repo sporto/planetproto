@@ -1,0 +1,21 @@
+{
+    "title"    : "Comprendre les prototypes en JavaScript"
+  , "subtitle" : "\u001b[23mSélectionnez un exercice et tapez \u001b[3mEnter\u001b[23m pour démarrer"
+  , "menu": {
+    "credits": "CRÉDITS"
+  }
+  , "exercise": {
+      "010 Simple objects": "010 Objets simples"
+    , "020 Proto": "020 __proto__"
+    , "030 Dynamic lookups": "030 Lookups dynamiques"
+    , "040 Property assignments": "040 Affectation de propriétés"
+    , "050 Arrays and Objects": "050 Tableaux et Objets"
+    , "060 Object Create": "060 Object.create"
+    , "070 Dot New": "070 Dot New"
+    , "080 Constructor functions": "080 Fonctions constructeurs"
+    , "090 Implicit this": "090 this implicite"
+    , "100 Function prototype": "100 Function.prototype"
+  }
+  , "exercises": {
+  }
+}

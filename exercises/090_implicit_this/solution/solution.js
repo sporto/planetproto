@@ -1,5 +1,5 @@
 function Robot() {
-	
+
 }
 
 function Vehicle () {

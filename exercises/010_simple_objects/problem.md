@@ -16,7 +16,7 @@
 Simple objects
 =============
 
-There are many way of creating objects in JavaScript, but the simplest way is
+There are many ways of creating objects in JavaScript, but the simplest way is
 by using object literals:
 
 ```js
@@ -38,7 +38,7 @@ Boilerplate
 -----------
 
 A file 010.js with the necessary boilerplate has been created for you. This 
-files contains the instructions and placeholders for your code.
+file contains the instructions and placeholders for your code.
 
 At the end of each boilerplate you will see a common js export 
 `modules.exports = ...`. This is there to aid the verifier, please don't modify

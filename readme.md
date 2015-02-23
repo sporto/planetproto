@@ -67,6 +67,11 @@ $ planetproto verify mysolution.js
 
 Feedback and criticism is welcome, please log your troubles in [issues](https://github.com/sporto/planetproto/issues). 
 
+## Development
+
+Run `node planetproto.js` to run the workshop
+Run `node planetproto.js verify 010.js` to verify a submission
+
 
 ## Thanks rvagg
 

@@ -7,35 +7,32 @@ function verify(exercise, userMod, verifyCallback){
 	var it = makeVerificator(exercise, errors);
 
 	var Robot    = userMod.Robot;
-	var robby    = userMod.robby;
+	var Vehicle  = userMod.Vehicle;
 
 	it('exports a Robot variable', function () {
 		assert.isDefined(Robot);
 	});
 
-	it('exports a robby variable', function () {
-		assert.isDefined(robby);
+	it('exports a Vehicle variable', function () {
+		assert.isDefined(Vehicle);
 	});
 
 	it('Robot is a function', function () {
 		assert.isFunction(Robot);
 	});
 
-	it('robby is an instance of Robot', function () {
-		assert.instanceOf(robby, Robot);
+	it('Vehicle is a function', function () {
+		assert.isFunction(Vehicle);
 	});
 
-	it('robby has property motors', function () {
-		assert.isDefined(robby.motors);
+	it('new Robot() returns an instance of Robot', function () {
+		var robot = new Robot();
+		assert.instanceOf(robot, Robot);
 	});
 
-	it('robby.motors is 2', function () {
-		assert.equal(robby.motors, 2);
-	});
-
-	it('defines robby.motors inside the constructor', function () {
-		var other = new Robot();
-		assert.isDefined(other.motors);
+	it("new Vehicle() doesn't return an instance of Vehicle", function () {
+		var vehicle = new Vehicle();
+		assert.notInstanceOf(vehicle, Vehicle);
 	});
 
 	if (errors.length) {
@@ -45,4 +42,12 @@ function verify(exercise, userMod, verifyCallback){
 	}
 }
 
-module.exports = verify;
+function run() {
+	
+}
+
+module.exports = {
+	verify: verify,
+	run:    run
+}
+

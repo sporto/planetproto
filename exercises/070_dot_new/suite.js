@@ -37,4 +37,12 @@ function verify(exercise, userMod, verifyCallback){
 	}
 }
 
-module.exports = verify;
+function run() {
+	
+}
+
+module.exports = {
+	verify: verify,
+	run:    run
+}
+

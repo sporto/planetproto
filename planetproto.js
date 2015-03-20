@@ -15,14 +15,14 @@ function fpath (f) {
 
 workshopper({
 	name        : name,
-	title       : title
-  , subtitle    : subtitle
-  , exerciseDir : fpath('./exercises/')
-  , appDir      : __dirname
-  , helpFile    : fpath('help.txt')
-  , languages   : [ 'en', 'fr' ]
-  , menuItems   : [ {
-        name    : 'credits'
-      , handler : credits
-    } ]
-})
+	title       : title,
+	subtitle    : subtitle,
+	exerciseDir : fpath('./exercises/'),
+	appDir      : __dirname,
+	helpFile    : fpath('help.txt'),
+	languages   : ['en', 'fr'],
+	menuItems   : [{
+		name    : 'credits',
+		handler : credits
+	}]
+});

@@ -49,7 +49,7 @@ Note the `__` placeholders in the boilerplate. You should replace this with your
 Claims
 -----
 
-Sometimes the challenge will ask you to make a claim. We have provided claim as 
+Sometimes the challenge will ask you to make a claim. We have provided `claim` as 
 a global function.
 
 To make a claim write `claim(actual, expected)`, e.g.:

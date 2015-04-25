@@ -6,9 +6,9 @@ At this stage we know enough to do amazing things with JavaScript objects.
 Challenge
 ---------
 
-- Define an object called 'Robot'
-- Define a method called 'new' in Robot
-- When Robot.new is called it should return a new object with the prototype set to Robot e.g.
+- Define an object called `Robot`
+- Define a method called `new` in `Robot`
+- When `Robot.new` is called it should return a new object with the prototype set to `Robot` e.g.:
 
 ```js
 var robby = Robot.new();

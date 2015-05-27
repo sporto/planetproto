@@ -6,7 +6,7 @@ __
 vehicle.__proto__ = machine;
 robot.__proto__ = machine;
 
-// -> What are `machines.motors`, `robot.motors` and `vehicle.motors`?
+// -> What are `machine.motors`, `robot.motors` and `vehicle.motors`?
 claim(machine.motors, __);
 claim(robot.motors, __);
 claim(vehicle.motors, __);
@@ -14,7 +14,7 @@ claim(vehicle.motors, __);
 // -> Set `robot.motors` to 4 by direct assignment
 __
 
-// -> What are `machines.motors`, `robot.motors` and `vehicle.motors` now?
+// -> What are `machine.motors`, `robot.motors` and `vehicle.motors` now?
 claim(machine.motors, __);
 claim(robot.motors, __);
 claim(vehicle.motors, __);

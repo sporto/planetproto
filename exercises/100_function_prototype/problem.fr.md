@@ -18,7 +18,7 @@ Alien.__proto__ === Alien.prototype // => false
 ```
 
 Évidemment, ça engendre beaucoup de confusion quand les gens utilisent le
-Éterme `prototype` pour parler de plusieurs choses différentes.
+terme `prototype` pour parler de plusieurs choses différentes.
 
 Une bonne manière de clarifier les choses consiste à parler de la propriété
 `prototype` des fonctions en tant que « prototype de fonction », et pas juste

@@ -32,7 +32,9 @@ var zack = Object.create(alien);
 Object.getPrototypeOf(zack); //=> alien
 ```
 
-There is no such thing as `Object.setPrototype`.
+### `Object.setPrototypeOf`
+
+Newer versions of JavaScript (ES2015) also provide `Object.setPrototypeOf(object, prototype)` as an "official" alternative to changing `__proto__`. However, please keep in mind that changing the prototype on runtime is a very slow operation. It's always better to define the prototype *before* the object is created, e.g. by using `Object.create()`. 
 
 Challenge
 ---------

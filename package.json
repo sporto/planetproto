@@ -1,6 +1,6 @@
 {
   "name": "planetproto",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A Workshop for understanding JavaScript prototypes",
   "main": "index.js",
   "scripts": {

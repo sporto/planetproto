@@ -42,7 +42,7 @@ function verify(exercise, userMod, verifyCallback){
 		assert.isArray(machine.parts);
 	});
 
-	it('machine.parts is an object', function () {
+	it('machine.capabilities is an object', function () {
 		assert.isObject(machine.capabilities);
 	});
 

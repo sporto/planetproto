@@ -1,0 +1,21 @@
+{
+    "title"    : "JavaScriptのprototypeを学ぼう"
+  , "subtitle" : "\u001b[23m問題を選んで \u001b[3mEnter\u001b[23mを押して開始しましょう"
+  , "menu": {
+    "credits": "CREDITS"
+  }
+  , "exercise": {
+      "010 Simple objects": "010 単純なオブジェクト"
+    , "020 Proto": "020 __proto__ オブジェクトについて"
+    , "030 Dynamic lookups": "030 Prototypeの遡り探索は動的"
+    , "040 Property assignments": "040 プロパティの代入について"
+    , "050 Arrays and Objects": "050 prototypeにおける配列とオブジェクト"
+    , "060 Object Create": "060 Object.create"
+    , "070 Dot New": "070 オレオレ'new'を作ってみよう"
+    , "080 Constructor functions": "080 Constructor関数"
+    , "090 Implicit this": "090 'this'は暗黙的に設定されている"
+    , "100 Function prototype": "100 '関数のprototype'について"
+  }
+  , "exercises": {
+  }
+}

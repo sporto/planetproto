@@ -9,7 +9,7 @@ var alien = {
 	kind: 'alien'
 };
 
-// robotoオブジェクトも作ります
+// robotオブジェクトも作ります
 var robot = {
 	kind: 'robot'
 };

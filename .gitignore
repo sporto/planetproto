@@ -2,5 +2,6 @@ node_modules
 *.sublime-*
 npm-debug.log
 /0??.js
+/1??.js
 /0???.js
 

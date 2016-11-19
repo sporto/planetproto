@@ -2,7 +2,7 @@
 ===============================
 
 Quand nous utilisons `new` avec une fonction, JavaScript injecte une référence
-implicit dans le nouvel objet créé sous la forme du mot-clé `this`.  Il
+implicite dans le nouvel objet créé sous la forme du mot-clé `this`.  Il
 renvoie également cette référence implicitement à la fin de la fonction.
 
 Quand nous faisons ceci :

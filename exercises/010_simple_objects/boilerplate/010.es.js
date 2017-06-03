@@ -8,5 +8,5 @@ claim(robot.smart, __);
 // ------------------------------------------------
 // Exports de Common JS para verificación, no modificar
 module.exports = {
-	robot: robot
+  robot: robot
 }

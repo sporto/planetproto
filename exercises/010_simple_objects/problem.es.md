@@ -21,7 +21,7 @@ objetos "literales":
 
 ```js
 var alien = {
-	legs: 3
+  legs: 3
 };
 ```
 

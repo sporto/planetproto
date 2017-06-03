@@ -5,7 +5,7 @@ Qué pasa si actualizas una propiedad que ya existía en el prototipo? Veamos:
 
 ```js
 var alien = {
-	kind: 'alien'
+  kind: 'alien'
 };
 
 var zippy = {};

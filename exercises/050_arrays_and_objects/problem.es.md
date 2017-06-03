@@ -7,7 +7,7 @@ Veamos qué pasa cuando modificamos un arreglo:
 
 ```js
 var alien = {
-	skills: ['morph']
+  skills: ['morph']
 };
 
 var zorg = {};

@@ -10,12 +10,12 @@ prototipos de una forma sencilla.
 ```js
 // creémos un objeto alien
 var alien = {
-	kind: 'alien'
+  kind: 'alien'
 };
 
 // y un objeto robot
 var robot = {
-	kind: 'robot'
+  kind: 'robot'
 };
 
 // y un objeto llamado 'zippy'

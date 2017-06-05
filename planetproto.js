@@ -20,7 +20,7 @@ workshopper({
 	exerciseDir : fpath('./exercises/'),
 	appDir      : __dirname,
 	helpFile    : fpath('help.txt'),
-	languages   : ['en', 'fr', 'ja', 'uk'],
+	languages   : ['en', 'fr', 'ja', 'uk', 'es'],
 	menuItems   : [{
 		name    : 'credits',
 		handler : credits
